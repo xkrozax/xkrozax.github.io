@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RapportDePresentation" language="groovy" pageWidth="595" pageHeight="842" columnWidth="513" leftMargin="41" rightMargin="41" topMargin="26" bottomMargin="26" uuid="992cb422-ada8-43ba-9132-71471ee707c2">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="223"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Ordres de service" uuid="054d19f4-1779-4e54-aaf5-88c5f7db0aea">
+		<field name="typeOrdreService" class="java.lang.String"/>
+		<field name="dateOrdreService" class="java.lang.String"/>
+		<field name="dateSignatureMo" class="java.lang.String"/>
+		<field name="numOrdreService" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Table Ordre de service AR" uuid="6a526e26-87ae-4e3d-b99f-12b6617be5eb">
+		<field name="dateOrdreService" class="java.lang.String"/>
+		<field name="typeOrdreService" class="java.lang.String"/>
+		<field name="dateSignatureMo" class="java.lang.String"/>
+		<field name="numOrdreService" class="java.lang.String"/>
+		<field name="delaiArretPrestation" class="java.lang.Integer"/>
+		<field name="motifsOrdreService" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Table Cautions" uuid="f20076c3-1725-4f45-bf5e-1f9eb06fbcad">
+		<field name="typeCaution" class="java.lang.String"/>
+		<field name="numCaution" class="java.lang.String"/>
+		<field name="dateEtablissement" class="java.lang.String"/>
+		<field name="montantCaution" class="java.math.BigDecimal"/>
+		<field name="etablissement" class="java.lang.String"/>
+		<field name="etatCaution" class="java.lang.String"/>
+		<field name="dateRemise" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="Table Decomptes" uuid="f86ace57-7fbb-4ec7-bbb8-503297beb3e0">
+		<field name="numDecompte" class="java.lang.Integer"/>
+		<field name="dateDecompte" class="java.lang.String"/>
+		<field name="typeDecompte" class="java.lang.String"/>
+		<field name="montantDecompte" class="java.math.BigDecimal"/>
+		<field name="montantAcompte" class="java.math.BigDecimal"/>
+		<field name="montantRevisionPrix" class="java.math.BigDecimal"/>
+		<field name="montantP" class="java.math.BigDecimal"/>
+	</subDataset>
+	<parameter name="numDeMarches" class="java.lang.String"/>
+	<parameter name="numDeMarches2" class="java.lang.String"/>
+	<parameter name="budgetFinancement" class="java.lang.String"/>
+	<parameter name="creditDisponible" class="java.lang.String"/>
+	<parameter name="estimation" class="java.lang.String"/>
+	<parameter name="montantMarches" class="java.lang.String"/>
+	<parameter name="typeAo" class="java.lang.String"/>
+	<parameter name="dateOp" class="java.lang.String"/>
+	<parameter name="cautionnementP" class="java.lang.String"/>
+	<parameter name="attributaireDeMarches" class="java.lang.String"/>
+	<parameter name="objetAppelOffre" class="java.lang.String"/>
+	<parameter name="imputationBudgetaire" class="java.lang.String"/>
+	<parameter name="delaiExecution" class="java.lang.String"/>
+	<parameter name="architecte" class="java.lang.String"/>
+	<parameter name="bureauEtude" class="java.lang.String"/>
+	<parameter name="bureauControle" class="java.lang.String"/>
+	<parameter name="nomJournal2" class="java.lang.String"/>
+	<parameter name="nomJournal1" class="java.lang.String"/>
+	<parameter name="nomJournal3" class="java.lang.String"/>
+	<parameter name="nomJournal4" class="java.lang.String"/>
+	<parameter name="nomJournal5" class="java.lang.String"/>
+	<parameter name="nomJournal6" class="java.lang.String"/>
+	<parameter name="nombreConcurrent" class="java.lang.Integer"/>
+	<parameter name="numAppelOffre" class="java.lang.String"/>
+	<parameter name="dateVisa" class="java.lang.String"/>
+	<parameter name="dateApprobation" class="java.lang.String"/>
+	<parameter name="dateNotificationApprobation" class="java.lang.String"/>
+	<parameter name="dateOrdreService" class="java.lang.String"/>
+	<parameter name="dateReceptionProvsoire" class="java.lang.String"/>
+	<parameter name="dateReceptionDefinitive" class="java.lang.String"/>
+	<parameter name="listeOrdredeservice" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="listeOrdredeserviceAR" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="listeCautions" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="listeDecommptes" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="lieuExecution" class="java.lang.String"/>
+	<parameter name="montantRealise" class="java.lang.String"/>
+	<parameter name="montantDepenses" class="java.lang.String"/>
+	<parameter name="montantDepensesPersonnels" class="java.lang.String"/>
+	<parameter name="montantBeneficeMarches" class="java.lang.String"/>
+	<parameter name="maitreOuvrage" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="155" y="18" width="193" height="20" uuid="92140911-082b-4652-a2b5-465f4f7b62a5"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RAPPORT DU MARCHE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="38" width="159" height="20" uuid="f5ffb60e-8e19-4150-b63f-04515559697b"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numDeMarches2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="629">
+			<staticText>
+				<reportElement positionType="Float" x="0" y="24" width="115" height="20" backcolor="#FFFFFF" uuid="3dca9006-1e0f-4a38-97eb-4d3548ca5199"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Objet du marché :]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="115" y="24" width="398" height="31" backcolor="#FFFFFF" uuid="44ba8e16-1620-4638-9a1e-2b7c48010f3a"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objetAppelOffre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="74" width="136" height="20" backcolor="#FFFFFF" uuid="03deb4ff-63b3-4342-b034-45f5fde53638"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Mode de passation :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="134" width="191" height="20" backcolor="#FFFFFF" uuid="dddfd1cf-3ed4-4822-a102-9a34ba84a044"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Montant de caution provisoire :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="114" width="131" height="20" backcolor="#FFFFFF" uuid="cda392cf-a7fe-47f5-932e-6e19c137814e"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Montant du marché : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="94" width="165" height="20" backcolor="#FFFFFF" uuid="65efa575-b8db-44d2-a609-fa751f8620b1"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Date d'ouverture des plis :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="131" y="114" width="382" height="20" backcolor="#FFFFFF" uuid="e249107b-4f74-41ce-851c-9c10cd6bd697"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{estimation}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="136" y="74" width="377" height="20" backcolor="#FFFFFF" uuid="ccd02d8a-3fea-41ca-9633-e7e623cada75"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{typeAo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="191" y="134" width="322" height="20" backcolor="#FFFFFF" uuid="359f4a0a-c322-47a9-b9a5-88e7b67fdbdf"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cautionnementP}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="165" y="94" width="348" height="20" backcolor="#FFFFFF" uuid="20452769-6a5f-44f0-879e-d5d60598c31e"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateOp}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="513" height="20" backcolor="#FFFFFF" uuid="2fc711d7-95d8-4387-b145-d40a973fbce3"/>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="365" width="513" height="20" backcolor="#FFFFFF" uuid="d42a1c46-0fa0-4666-9f69-8b70aacc24e4"/>
+				<componentElement>
+					<reportElement key="table" style="table" positionType="Float" x="0" y="0" width="513" height="16" backcolor="#FFFFFF" uuid="3de2753c-2137-473f-8bd5-9f21360436be"/>
+					<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<datasetRun subDataset="Table Ordres de service" uuid="748ce106-beea-4ada-b61e-85879accbd53">
+							<datasetParameter name="REPORT_DATA_SOURCE">
+								<datasetParameterExpression><![CDATA[$P{listeOrdredeservice}]]></datasetParameterExpression>
+							</datasetParameter>
+						</datasetRun>
+						<jr:column width="210" uuid="bb2c9c1f-a9a9-4603-b4a6-38937a9e6d75">
+							<jr:columnHeader style="table_CH" height="31" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="130" height="27" uuid="a984545a-4289-4456-a925-9aef76d13970"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Type Ordre de service]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="196" height="20" uuid="2b04c1fc-2e68-4b56-9d44-d8699decc4d7"/>
+									<textFieldExpression><![CDATA[$F{typeOrdreService}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="100" uuid="b019d740-e655-45ef-b408-34cf4dab4e80">
+							<jr:columnHeader style="table_CH" height="31" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="90" height="27" uuid="bd732637-41c8-4c3b-b461-c79f205d603a"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Date de commencement]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="90" height="20" uuid="fe114e09-7b30-4c4c-a197-90667b8e26e3"/>
+									<textElement textAlignment="Center"/>
+									<textFieldExpression><![CDATA[$F{dateOrdreService}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="103" uuid="98dcf9f0-e22d-4c5a-99b5-05efa763da18">
+							<jr:columnHeader style="table_CH" height="31" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="98" height="27" uuid="4a045197-86b6-40e4-ac07-b0f3f5703ed2"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Date notification de l'ordre de service]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="87" height="20" uuid="c45cdd67-68ed-49e8-afc7-8a634bc9d586"/>
+									<textElement textAlignment="Center"/>
+									<textFieldExpression><![CDATA[$F{dateSignatureMo}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="97" uuid="99e4be73-09f8-48db-84fd-641c2f28fc57">
+							<jr:columnHeader style="table_CH" height="31" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="90" height="27" uuid="ca415653-15a1-46c8-a9cd-161e4c6959d7"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[N° notification de l'ordre de service]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="90" height="20" uuid="5a73f0da-2ece-4181-acfa-5e1a1ae97d24"/>
+									<textElement textAlignment="Center"/>
+									<textFieldExpression><![CDATA[$F{numOrdreService}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:table>
+				</componentElement>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="256" width="513" height="20" backcolor="#FFFFFF" uuid="53de95b0-ee39-44e8-af30-e5a9aedd3eed"/>
+				<staticText>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="513" height="20" backcolor="#CCCCCC" uuid="3ac9e4bb-c51b-4775-9424-2ecccaf05f65"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[- Approbation du marché]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="276" width="136" height="20" backcolor="#FFFFFF" uuid="46bc3a13-a7de-4966-a55a-0c1fc2d61e13"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Date d'approbation :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="136" y="276" width="377" height="20" isRemoveLineWhenBlank="true" backcolor="#FFFFFF" uuid="26e676f2-b7b7-4fee-9572-7155c4080c92"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateApprobation}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="206" y="296" width="307" height="20" isRemoveLineWhenBlank="true" backcolor="#FFFFFF" uuid="9ecc414c-1366-4cfc-8250-1521be1f8c14"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateNotificationApprobation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="296" width="206" height="20" backcolor="#FFFFFF" uuid="dd778d41-4ebb-4ace-8e6c-f408a2ea00f0"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Date notification de l'approbation :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="-273" width="122" height="20" backcolor="#FFFFFF" uuid="55ddff8b-6fe7-4089-94c0-27d63dc58cc2"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Délais d'exécution : ]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="122" y="-273" width="391" height="20" backcolor="#FFFFFF" uuid="82f1e180-e3f6-491e-8bfa-6accbbfdf746"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{delaiExecution}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="-253" width="224" height="20" backcolor="#FFFFFF" uuid="668da4f6-77b2-4e1b-90a3-bd4e4c3f269a"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Date de commencement d'exécution :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="224" y="-253" width="289" height="20" isRemoveLineWhenBlank="true" backcolor="#FFFFFF" uuid="8d993961-47ea-4f0d-a2ce-60c25d66fc77"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateOrdreService}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="-297" width="513" height="20" backcolor="#FFFFFF" uuid="104ab16e-7817-43c9-a637-38f5ff99f65b"/>
+				<staticText>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="513" height="20" backcolor="#CCCCCC" uuid="bc26bb3a-8d7e-47e5-889b-380f2548c50f"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[- Présentation des délais]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="316" width="513" height="20" backcolor="#FFFFFF" uuid="aead513e-aef1-4689-9155-2071d1b546bb"/>
+				<staticText>
+					<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="513" height="20" backcolor="#CCCCCC" uuid="94703d80-7707-4183-b91d-2f3ec2ba9132"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[- Ordres de service]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="442" width="513" height="20" backcolor="#FFFFFF" uuid="db0e9e78-840e-4ac8-90db-a909c9cb1d63"/>
+			</frame>
+			<frame>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="462" width="513" height="20" backcolor="#FFFFFF" uuid="8f59a802-9d5c-494b-a8ad-23c0adf61ecd"/>
+				<componentElement>
+					<reportElement key="table 2" style="table 2" positionType="Float" x="0" y="0" width="513" height="20" uuid="d35e7858-6a21-49c7-b279-01a7ec5f0459"/>
+					<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<datasetRun subDataset="Table Cautions" uuid="0292c6b1-4164-4dd5-9cdc-a88fefecdd52">
+							<datasetParameter name="REPORT_DATA_SOURCE">
+								<datasetParameterExpression><![CDATA[$P{listeCautions}]]></datasetParameterExpression>
+							</datasetParameter>
+						</datasetRun>
+						<jr:column width="102" uuid="7562ec94-a5be-450a-ab5f-e5f93d38eb7c">
+							<jr:columnHeader style="table 2_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="85" height="27" uuid="9471ec80-6f03-4200-bb08-89aecd63f956"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Type caution]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table 2_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="97" height="20" uuid="ce399253-2fa3-43b5-bb89-2159aef6a018"/>
+									<textFieldExpression><![CDATA[$F{typeCaution}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="75" uuid="17d8dde7-3a2a-419c-9ad1-5d26320d85fd">
+							<jr:columnHeader style="table 2_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="70" height="27" uuid="408102d6-1e59-48f7-a31d-f56d795dc1f2"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Date etablissement]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table 2_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="70" height="20" uuid="67045c57-108f-491c-9e17-4fbf7e8a407a"/>
+									<textElement textAlignment="Center"/>
+									<textFieldExpression><![CDATA[$F{dateEtablissement}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="73" uuid="dd2cb51b-c802-4c94-87b3-04ee026f3d10">
+							<jr:columnHeader style="table 2_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="66" height="27" uuid="0ecfd7e5-1fd5-4225-989d-38580168eeb1"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Montant caution]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table 2_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="66" height="20" uuid="d5d61470-994f-40cd-b758-2d8888ea7a9e">
+										<printWhenExpression><![CDATA[$F{montantCaution} > 0.00]]></printWhenExpression>
+									</reportElement>
+									<textElement textAlignment="Center"/>
+									<textFieldExpression><![CDATA[$F{montantCaution}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="139" uuid="144f7a46-79e1-472c-bc59-449462629f35">
+							<jr:columnHeader style="table 2_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="115" height="27" uuid="d88304c6-5887-44de-bf91-a01fff88a867"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Etablissement]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table 2_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="132" height="20" uuid="475e6bd1-0f91-443d-b3e2-861c4ed7cbae"/>
+									<textFieldExpression><![CDATA[$F{etablissement}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="64" uuid="c7d2e997-a7f1-4cd8-a3b5-8e8724a6f46c">
+							<jr:columnHeader style="table 2_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="58" height="27" uuid="fc05c9d7-e198-4d0f-b85b-15f99bceda43"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Etat caution]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table 2_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="58" height="20" uuid="f3a2cf98-d29f-4306-8061-a9d3cedea22d">
+										<printWhenExpression><![CDATA[$F{etatCaution} != "-------------"]]></printWhenExpression>
+									</reportElement>
+									<textElement textAlignment="Center"/>
+									<textFieldExpression><![CDATA[$F{etatCaution}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="58" uuid="f5e57eef-0fc0-4b21-8050-27bdbec93259">
+							<jr:columnHeader style="table 2_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="5" y="3" width="52" height="27" uuid="9efca8c3-1a42-42ca-b9d0-7c3597d10e41"/>
+									<textElement>
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Date main levée]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:detailCell style="table 2_TD" height="24" rowSpan="1">
+								<textField isStretchWithOverflow="true">
+									<reportElement positionType="Float" x="5" y="3" width="52" height="20" uuid="fdce49d7-e0b9-45e8-ae41-0669a9f8d4a5"/>
+									<textElement textAlignment="Center"/>
+									<textFieldExpression><![CDATA[$F{dateRemise}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:table>
+				</componentElement>
+			</frame>
+			<componentElement>
+				<reportElement key="table 1" style="table 1" positionType="Float" x="0" y="415" width="513" height="17" uuid="b1de676d-e3c2-4de2-9e67-6782b7c95a9e"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Ordre de service AR" uuid="2c128580-af29-4bb5-b3de-d3390c190a81">
+						<datasetParameter name="REPORT_DATA_SOURCE">
+							<datasetParameterExpression><![CDATA[$P{listeOrdredeserviceAR}]]></datasetParameterExpression>
+						</datasetParameter>
+					</datasetRun>
+					<jr:column width="82" uuid="b7ccd194-f27f-4632-b466-7598cc7c82cd">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="4" y="3" width="75" height="27" uuid="1026f200-5e77-44f2-a474-d8ded0730a4b"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Type d'ordre de service]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="4" y="3" width="78" height="20" uuid="9bcb5637-f610-4f2e-bbca-906933b69193"/>
+								<textFieldExpression><![CDATA[$F{typeOrdreService}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="66" uuid="19ab3476-9b8b-4558-b214-31ecb0ca0d2b">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="3" width="59" height="27" uuid="303f8327-12f9-42f1-9704-923640b70ba8"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date arrêt / reprise]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="3" width="59" height="20" uuid="3eed089f-be0f-453f-8c35-08f3b9965535"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{dateOrdreService}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="96" uuid="4fd1b8a4-6220-4422-bbdd-211e4be8b6ea">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="3" width="90" height="27" uuid="56d6d3c9-050e-4307-9f82-e4cc092b8e94"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date notification ordre de service]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="3" width="85" height="20" uuid="0d30683f-2147-412b-a803-c0ee6519831b"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{dateSignatureMo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="72" uuid="83203402-ea77-49ae-b347-b38c11399b29">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="3" width="64" height="27" uuid="018f7890-4d2a-4883-a93d-e4134a57bce8"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[N° d'ordre de service]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="3" width="64" height="20" uuid="0b964373-91d3-4b39-b5a8-333f9ed990dc"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{numOrdreService}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="38" uuid="885815c5-642c-4580-bd9f-c3d2ce23f9f7">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="4" y="3" width="34" height="27" uuid="a3d9cb4e-a19a-4d0f-9690-3e13673b4ddb"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Délais d'arrêt]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="3" width="36" height="20" uuid="cd4ac952-83a9-4416-bba7-40f2bc64bec3">
+									<printWhenExpression><![CDATA[$F{delaiArretPrestation} > 0]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{delaiArretPrestation}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="158" uuid="07e8c8b2-7db9-4e97-8b4e-7fa0afbb498e">
+						<jr:columnHeader style="table 1_CH" height="32" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="3" width="144" height="27" uuid="584b25e6-2337-43a3-b611-53e52425989c"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Motifs]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 1_TD" height="24" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="3" width="152" height="20" uuid="d9b5a3c7-6a34-4871-aef3-f426fb1b10bc"/>
+								<textFieldExpression><![CDATA[$F{motifsOrdreService}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="492" width="513" height="20" backcolor="#CCCCCC" uuid="167ef070-929b-4371-8daa-114d4d52807d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Décomptes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="340" width="224" height="20" backcolor="#FFFFFF" uuid="72253604-44b6-4958-bf4e-d6d794664c6b"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Ordre de service de commencement : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="392" width="224" height="20" backcolor="#FFFFFF" uuid="89fe0447-cac8-49cd-a97a-383b5491a93a"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Ordre de service d'arrêt / reprise : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="438" width="513" height="20" backcolor="#CCCCCC" uuid="02792ac6-841b-47c2-b7e7-1ff65c72c262"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Cautions]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement key="table 3" style="table 3" positionType="Float" x="0" y="519" width="513" height="22" uuid="35fd6b0a-218f-4a68-bd8a-46b1a14e5878"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Decomptes" uuid="c0b5f53e-3750-4b13-b6f1-7692d0c2a216">
+						<datasetParameter name="REPORT_DATA_SOURCE">
+							<datasetParameterExpression><![CDATA[$P{listeDecommptes}]]></datasetParameterExpression>
+						</datasetParameter>
+					</datasetRun>
+					<jr:column width="55" uuid="f217eb28-73ad-43f7-8056-068dcd2117e0">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="4" width="50" height="26" uuid="499ff5cc-fb30-403b-a7e6-e00fa68f172b"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[N° décompte]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="25" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="3" width="36" height="20" uuid="0dfda55c-94d5-41ce-9b09-9834e9f1d147"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{numDecompte}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="a109225f-0a1c-4f10-b1af-e7ab94e8bf11">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="4" width="85" height="26" uuid="fa10667d-172c-4566-89ae-388c4614019d"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Type décompte]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="25" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="3" width="81" height="20" uuid="95acfaa4-c1cd-4205-8217-72af42f291a4"/>
+								<textFieldExpression><![CDATA[$F{typeDecompte}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="68" uuid="3d33bb7d-f12d-4064-87cb-9cdb6527d04f">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="4" width="61" height="26" uuid="e15dc65c-0ada-4fcd-82e8-79f2447f2c54"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date décompte]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="25" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="3" width="59" height="20" uuid="09dab26c-f31e-41f7-8ea1-af1ab7b0f387"/>
+								<textElement textAlignment="Center"/>
+								<textFieldExpression><![CDATA[$F{dateDecompte}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="85" uuid="fc8ff8bc-23a0-4d06-874a-b65b455a73bb">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="4" width="75" height="26" uuid="31b001a2-55f1-4e6d-8d31-e180b4b4802e"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Montant décompte]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="25" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="3" width="81" height="20" uuid="ce56e7cc-b80c-4dc1-8db4-e5633934af06">
+									<printWhenExpression><![CDATA[$F{montantDecompte} > 0.00]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{montantDecompte}-$F{montantP}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="78" uuid="4d7ee1c1-aa8c-43a0-ad6c-c11691eb1852">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="4" width="52" height="26" uuid="fa382cbb-cbe4-47d5-b68f-810c3b8df923"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Montant d'acompte]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="25" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="3" width="74" height="20" uuid="c7bf4b31-e54f-4c3a-ab79-50a160d2823d">
+									<printWhenExpression><![CDATA[$F{montantAcompte} > 0.00]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{montantAcompte}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="73" uuid="a321d05b-970a-431c-8ad4-7a0ac4b5c1fe">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="4" width="67" height="26" uuid="79ad4545-d011-495c-b5a5-2ed0b848508c"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Révision des prix]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="25" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="3" width="68" height="20" uuid="9e92bd9b-fd47-44d1-8891-2f80916c0bb6">
+									<printWhenExpression><![CDATA[$F{montantRevisionPrix} > 0.00]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{montantRevisionPrix}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="63" uuid="fda95142-c987-4bbf-87b7-633de0748d45">
+						<jr:columnHeader style="table 3_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="4" width="57" height="26" uuid="dd373c0f-09fd-4262-b697-ad4ad4d952f0"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Pénalité de retard]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 3_TD" height="25" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="3" width="58" height="20" uuid="0e42fa49-312a-4fd3-a084-3e850c510232">
+									<printWhenExpression><![CDATA[$F{montantP} > 0.00]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Right"/>
+								<textFieldExpression><![CDATA[$F{montantP}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="555" width="513" height="20" backcolor="#CCCCCC" uuid="8b2bb5df-baf5-4ddf-8d47-83451496fd26"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Clôture du marché]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="585" width="180" height="20" backcolor="#FFFFFF" uuid="25b4936f-ebda-4838-9458-b764ccfc07c0"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Date de réception provisoire :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="180" y="585" width="333" height="20" isRemoveLineWhenBlank="true" backcolor="#FFFFFF" uuid="0a42c051-f45d-492f-ae76-17d6af951acf"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateReceptionProvsoire}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="605" width="180" height="20" backcolor="#FFFFFF" uuid="2b608328-91ee-4dd2-bdc3-48ac16b5f870"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Date de réception définitive :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="180" y="605" width="333" height="20" isRemoveLineWhenBlank="true" backcolor="#FFFFFF" uuid="8098345e-6552-44aa-addd-370f87d828e7"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateReceptionDefinitive}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="55" width="115" height="20" backcolor="#FFFFFF" uuid="0d740da5-4d12-451f-ad7b-062d252e26c6"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Maitre d'Ouvrage :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="115" y="55" width="398" height="20" backcolor="#FFFFFF" uuid="923d7b56-8b8a-4996-9cb4-12867dc8c6ee"/>
+				<textElement>
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{maitreOuvrage}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="0" width="513" height="20" backcolor="#CCCCCC" uuid="a8407262-af04-4370-8a8d-b1bb8b0988b1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Présentation du marché]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" mode="Opaque" x="0" y="154" width="513" height="20" backcolor="#CCCCCC" uuid="c9954c09-1550-46db-9c79-7a23d9fdb54f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Situation Financière du marché]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="176" width="260" height="20" backcolor="#FFFFFF" uuid="24704ada-b2b1-44a6-bb39-d8575703e470"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Montant Total Payé  :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="260" y="176" width="119" height="20" backcolor="#FFFFFF" uuid="44b03d6e-1de8-498e-9cb9-ae07feeada40"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montantRealise}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="196" width="252" height="20" backcolor="#FFFFFF" uuid="681e6dec-cb6a-49de-8477-e6e8370de186"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Dépenses et Charges du Marché :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="252" y="196" width="127" height="20" backcolor="#FFFFFF" uuid="4f613cc6-417a-49ec-83c3-1917475118bc"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montantDepenses}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="216" width="252" height="20" backcolor="#FFFFFF" uuid="d6bf9208-e2b1-48cc-af66-796ffb226a7a"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Dépenses Salaire Personnels du Marché :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="252" y="216" width="127" height="20" backcolor="#FFFFFF" uuid="53c4dac4-c7e1-4077-9b3f-be664039982b"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montantDepensesPersonnels}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="236" width="191" height="20" backcolor="#FFFFFF" uuid="79eff0fb-815c-403d-82be-5b72d8b5daf7"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[- Montant Bénéfice du Marché :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="252" y="236" width="127" height="20" backcolor="#FFFFFF" uuid="ac105244-b32e-4fc4-85e4-579eba95a67c"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montantBeneficeMarches}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

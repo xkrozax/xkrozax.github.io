@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pvSeanceCD" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d8c31ede-7b4f-4313-ae80-18f7a85ac9ca">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="anneeAppelOffre" class="java.lang.Integer"/>
+	<parameter name="numAppelOffre" class="java.lang.String"/>
+	<parameter name="objetAppelOffre" class="java.lang.String"/>
+	<parameter name="dateOp" class="java.lang.String"/>
+	<parameter name="heureOp" class="java.lang.Integer"/>
+	<parameter name="minuteOp" class="java.lang.Integer"/>
+	<parameter name="lieuOp" class="java.lang.String"/>
+	<parameter name="membre1Commssion" class="java.lang.String"/>
+	<parameter name="membre2Commssion" class="java.lang.String"/>
+	<parameter name="membre3Commssion" class="java.lang.String"/>
+	<parameter name="membre4Commssion" class="java.lang.String"/>
+	<parameter name="membre5Commssion" class="java.lang.String"/>
+	<parameter name="membre6Commssion" class="java.lang.String"/>
+	<parameter name="membre7Commssion" class="java.lang.String"/>
+	<parameter name="membre8Commssion" class="java.lang.String"/>
+	<parameter name="membre9Commssion" class="java.lang.String"/>
+	<parameter name="membre10Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre1Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre2Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre3Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre5Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre4Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre6Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre7Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre8Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre9Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre10Commssion" class="java.lang.String"/>
+	<parameter name="paragraphe4" class="java.lang.String"/>
+	<parameter name="paragraphe5" class="java.lang.String"/>
+	<parameter name="paragraphe6" class="java.lang.String"/>
+	<parameter name="paragraphe7" class="java.lang.String"/>
+	<parameter name="numSeance" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="172" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="165" height="97" uuid="427191d7-a41f-49a0-8390-1a8377659079"/>
+				<textElement>
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Royaume du Maroc
+Ministère de l'intérieur
+Prefecture d'Inezgane Ait Melloul Commune Dcheira El Jihadia
+Direction des services
+Division d'équipement
+Service Marche]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="182" y="134" width="110" height="20" forecolor="#006699" uuid="4738bd63-62b7-40b2-b9d8-d03e5ab96bde"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numAppelOffre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="134" width="100" height="20" forecolor="#006699" uuid="b48aae49-bba5-4bf6-93d8-850f8b8cd554"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numSeance}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="301" y="134" width="59" height="20" forecolor="#006699" uuid="f85e99bc-8f56-45d0-968b-a765ca5f2266"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Séance N° :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="155" y="112" width="284" height="22" forecolor="#006699" backcolor="#E6E6E6" uuid="545b8ecd-6442-45e2-84ac-b79dd2b20f19"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROCES VERBAL D’APPEL D’OFFRES OUVERT]]></text>
+			</staticText>
+			<image>
+				<reportElement x="449" y="0" width="106" height="97" uuid="abf07919-4e6a-417a-b4bb-4d47ceac4dd7"/>
+				<imageExpression><![CDATA["C:\\Users\\safouane\\Workspaces\\MyEclipse 10\\MarchesPublics\\WebRoot\\images\\Logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="410" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="60" height="20" uuid="32cab5b0-029b-409e-9777-9ab433b7af31"/>
+				<textElement>
+					<font fontName="Calibri" size="12"/>
+				</textElement>
+				<text><![CDATA[Relatif à :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="60" y="0" width="495" height="32" uuid="9cab4afe-4e55-41c0-bb9e-9b6003474e04"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objetAppelOffre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="74" width="165" height="16" isRemoveLineWhenBlank="true" uuid="4f3c147b-655d-4c4d-bf49-66a127dda070"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre1Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="74" width="390" height="16" isRemoveLineWhenBlank="true" uuid="45f6ef97-5e5b-4394-a0d7-263f835d60a0"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre1Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="90" width="390" height="16" isRemoveLineWhenBlank="true" uuid="d2e9c42e-4959-4ae5-8b6c-60131deb0110"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre2Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="90" width="165" height="16" isRemoveLineWhenBlank="true" uuid="1e713928-993c-4bf4-848b-b5219e47f814"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre2Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="106" width="390" height="16" isRemoveLineWhenBlank="true" uuid="736dbc6e-c47e-4b76-978a-d05ff94716c4"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre3Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="106" width="165" height="16" isRemoveLineWhenBlank="true" uuid="f388aa8d-9137-4203-83d9-8aa7ca2b91e0"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre3Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="122" width="390" height="16" isRemoveLineWhenBlank="true" uuid="af592262-f7aa-433e-a6e3-17a20f75a56a"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre4Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="122" width="165" height="16" isRemoveLineWhenBlank="true" uuid="51ea4091-fea1-483e-88b4-e1ec1f1c7288"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre4Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="138" width="390" height="16" isRemoveLineWhenBlank="true" uuid="209be733-aa1a-455d-ab1d-ef1160b8893e"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre5Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="138" width="165" height="16" isRemoveLineWhenBlank="true" uuid="fc69f8ad-c428-4e8b-8702-1129e4b864cf"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre5Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="154" width="390" height="16" isRemoveLineWhenBlank="true" uuid="5e65c019-0e63-4ca7-98af-a6ac1ecc6239"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre6Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="154" width="165" height="16" isRemoveLineWhenBlank="true" uuid="012bc68a-7fd1-4133-a2d7-690e8ebbc396"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre6Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="32" width="555" height="42" uuid="a2b0e802-2480-410b-89e8-3f3bbd5e457b"/>
+				<textElement>
+					<font fontName="CG Omega" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="185" width="555" height="45" uuid="0274ea93-c5bf-49dc-b45e-447789b88aad"/>
+				<textElement>
+					<font fontName="CG Omega" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="230" width="555" height="85" uuid="3baf722e-088b-4b37-90e1-c6d8933f78ee"/>
+				<textElement>
+					<font fontName="CG Omega" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="315" width="555" height="95" uuid="a0da9633-f314-4a35-93a2-0af708e03db5"/>
+				<textElement>
+					<font fontName="CG Omega" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe7}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="33" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>

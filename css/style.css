@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+
+
+body{
+	background-color: rgba(245,245,245,1) !important;
+}
+
+.center{
+	position:  relative;
+	top: 20%;
+	left: 15%;
+}
+tr{
+	width: 400px ! important;
+	background-color: rgba(223,240,216,1) !important;
+}
+
+.thead{
+	background-color: rgba(92,184,92,0.35) !important;
+}
+

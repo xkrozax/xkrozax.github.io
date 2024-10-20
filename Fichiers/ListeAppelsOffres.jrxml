@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AvisImpositionTNB" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="730" leftMargin="56" rightMargin="56" topMargin="27" bottomMargin="27" uuid="5d4b8f20-d788-40b3-bf79-0a302a51a007">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="2c90f51a-5e16-4572-b2be-cf5180603ee4">
+		<field name="numAppelOffre" class="java.lang.Integer"/>
+		<field name="anneeAppelOffre" class="java.lang.Integer"/>
+		<field name="objetAppelOffre" class="java.lang.String"/>
+		<field name="dateOp" class="java.lang.String"/>
+		<field name="concurrentRetenu" class="java.lang.String"/>
+		<field name="montantTtc" class="java.math.BigDecimal"/>
+		<field name="statutActuel" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="listeAppelsoffres" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="anneeAppelOffre" class="java.lang.String" isForPrompting="false"/>
+	<title>
+		<band height="186" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="267" y="108" width="253" height="40" uuid="de9b546f-2f07-462e-b09e-a0cadd58fd00"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Liste des Appels d'offres]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="142" y="148" width="483" height="20" uuid="765afeb1-8b42-4225-be5b-5085bd75f98c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{anneeAppelOffre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="1" width="730" height="1" uuid="3dde62f3-9db3-4ecc-87cd-c3dd6e6464fb"/>
+			</line>
+			<componentElement>
+				<reportElement key="table 2" style="table 2" positionType="Float" x="0" y="33" width="530" height="50" uuid="d4601243-6c7a-4336-ad95-ee16b20527af"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="adc15f29-13ce-4f98-bdd2-43a62c20db9c">
+						<datasetParameter name="REPORT_DATA_SOURCE">
+							<datasetParameterExpression><![CDATA[$P{listeAppelsoffres}]]></datasetParameterExpression>
+						</datasetParameter>
+					</datasetRun>
+					<jr:column width="72" uuid="76fcd852-cb19-4900-ae72-7e7b8a0cdd73">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="15" y="5" width="55" height="30" uuid="081b378c-3ee3-49fe-8d34-769307677e7b"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[N° d'appel d'offre]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="28" height="20" uuid="2b2568f3-71d8-4205-b435-267613b15010"/>
+								<textElement textAlignment="Right">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{numAppelOffre}]]></textFieldExpression>
+							</textField>
+							<staticText>
+								<reportElement positionType="Float" x="33" y="5" width="8" height="20" uuid="260675db-7806-4334-9236-1fec520190ce"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[/]]></text>
+							</staticText>
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="41" y="5" width="29" height="20" uuid="43e5fb74-c02c-4703-8fdb-ce96a0b04b4c"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{anneeAppelOffre}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="302" uuid="b5d07e5b-75c4-4453-9377-158597fd8193">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="5" width="236" height="30" uuid="ed5b1150-6a1b-4212-8ec2-0e14cdd36b36"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Objet d'appel d'offre]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="295" height="20" uuid="1fe542b4-6bd5-4d5c-b0be-111baeeadcee"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{objetAppelOffre}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="79" uuid="a4b63ae2-768c-4b41-9ed0-233150354683">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="5" width="72" height="30" uuid="e2d8e758-2d0f-41a3-9af3-506bbc8b248c"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date ouverture des plis]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="72" height="20" uuid="4feb5422-67f1-43f6-a107-a750e1561c1d"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateOp}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="122" uuid="65d76007-4655-4396-aa00-78ef7ade4253">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="5" width="117" height="30" uuid="11d1471e-28c1-4a0c-89fc-c49a0ef53d89"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Attributaire]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="117" height="20" uuid="c504f7a8-4453-4312-908b-2767703c66fc"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{concurrentRetenu}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="85" uuid="ef50c3bc-1283-48b1-82a0-0d053a5bba6f">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="20" y="5" width="52" height="30" uuid="349b0080-acbd-465f-b7dc-298ef955df3d"/>
+								<textElement textAlignment="Right">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Montant du marché]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="5" width="72" height="20" uuid="ba6ad9b7-d2c3-44f9-8b6b-0f4865c472d5">
+									<printWhenExpression><![CDATA[$F{montantTtc} != 0.00]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Right">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{montantTtc}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="72" uuid="8dcd4b96-6475-46c7-b97e-3146bb12e098">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="5" width="67" height="30" uuid="7b365555-15ea-4e4d-ad40-3b877ccfed75"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Statut]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="67" height="20" uuid="2c6cdde8-df5a-4c69-bc91-0c528a83bfff"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{statutActuel}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

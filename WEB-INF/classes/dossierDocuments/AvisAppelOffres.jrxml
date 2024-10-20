@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Avis appel offreN°1" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="2676bd08-6a20-4faa-b275-fe6902b3a477">
+	<property name="ireport.scriptlethandling" value="2"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="numAppelOffre" class="java.lang.Integer"/>
+	<parameter name="anneeAppelOffre" class="java.lang.Integer"/>
+	<parameter name="objetAppelOffre" class="java.lang.String"/>
+	<parameter name="dateOp" class="java.lang.String"/>
+	<parameter name="heureOp" class="java.lang.Integer"/>
+	<parameter name="minuteOp" class="java.lang.Integer"/>
+	<parameter name="lieuOp" class="java.lang.String"/>
+	<parameter name="avisAo" class="java.lang.String"/>
+	<parameter name="paragraphe1" class="java.lang.String"/>
+	<parameter name="paragraphe2" class="java.lang.String"/>
+	<parameter name="paragraphe3" class="java.lang.String"/>
+	<parameter name="paragraphe4" class="java.lang.String"/>
+	<parameter name="cautionnementP" class="java.math.BigDecimal"/>
+	<parameter name="estimation" class="java.math.BigDecimal"/>
+	<parameter name="paragraphe5" class="java.lang.String"/>
+	<parameter name="paragraphe6" class="java.lang.String"/>
+	<parameter name="paragraphe7" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="145" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="165" height="97" uuid="ce8be849-cb8e-4718-a0d0-406ea2250cef"/>
+				<textElement>
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Royaume du Maroc
+Ministère de l'intérieur
+Préfecture d'Inezgane Ait Melloul Commune Dcheira El Jihadia
+Direction des services
+Division d'équipement
+Service Marche]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="135" y="97" width="333" height="22" forecolor="#006699" backcolor="#E6E6E6" uuid="c5bfee0d-51b7-4da0-b338-aee4d3588ab9"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{avisAo}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="452" y="0" width="83" height="97" uuid="543db5b1-ca6c-4514-8a89-68c4a64a8f6a"/>
+				<imageExpression><![CDATA["C:\\Users\\safouane\\Workspaces\\MyEclipse 10\\MarchesPublics\\WebRoot\\images\\Logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="586" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-5" x="0" y="71" width="535" height="50" uuid="0ce36cd9-c2d7-454f-b3f1-bb3f661cb0bb"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="false" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Le dossier d'appel d'offre peut être retiré au bureau du marché de la commune de Dcheira El Jihadia sise à l'hôtel de ville, il peut également être téléchargé à partir du Portail des Marchés Publics : www.marchespublics.gov.ma.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-6" x="0" y="132" width="165" height="17" uuid="6ea186eb-a3eb-42ce-906a-6d0cbbac5d6d"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cautionnement provisoire :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-7" x="0" y="218" width="535" height="194" uuid="52de05f6-d3b1-43a2-84f3-e0877f8f6ae5"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="false" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Le contenu, la présentation ainsi que le dépôt des dossiers des concurrents doit être conformes aux dispositions des articles 27,29 et 31 du décret n° 2.12.349 du 8 joumada I 1434 (20 mars 2013) relatif aux marchés publics.  La présentation des plis des concurrents doit respecter l'article 11 du règlement de la consultation en rajoutant obligatoirement les mentions suivantes sur les plis :
+- Numéros du registre de commerce
+- Ville du registre de commerce
+- L'adresse électronique (E-mail)
+Les concurrents peuvent:
+ -soit dépose contre récépissé leurs plis dans le bureau d'ordre de la commune de Dcheira El jihadia.
+ -soit les envoyer par courrier recommandé avec accusé de réception au bureau précité.
+ -soit les remettre, séance tenante, au président de la commission d'appel d'offre au début de la séance et avant l'ouverture des plis.
+ -soit transmettre l'offre au maitre d'ouvrage par voie électronique au portail des marchés publics.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="544" width="300" height="27" uuid="53ccce57-4083-416f-9cd4-16de9e4bbac4"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Singé : Le président de la Commune Dcheira .El jihadia]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="36" width="535" height="35" uuid="6e3a232a-a0dd-4715-9b4c-305fe1f518be"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-6" x="0" y="169" width="210" height="17" uuid="c80d11e8-81d7-4e83-bc59-2c5952b3dd51"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estimation des coûts des prestations :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="149" width="535" height="20" uuid="f2004f6d-d1a2-4263-ad43-0d2c99608bd3"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="186" width="535" height="20" uuid="a5c8d653-be54-48d4-af77-4265fc01b72b"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="426" width="535" height="57" uuid="9e0ff889-2e0c-47c7-a2b6-0e7572c4658f"/>
+				<textElement>
+					<font fontName="CG Omega" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="483" width="535" height="20" uuid="ccd615f3-c2df-46a6-93d1-a40b92d68684"/>
+				<textElement>
+					<font fontName="CG Omega" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="503" width="535" height="20" uuid="c91c049e-9c4b-4325-aced-f7754516d694"/>
+				<textElement>
+					<font fontName="CG Omega" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="535" height="36" uuid="1da774c4-0879-4c71-8f62-ebbd231c92c2"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

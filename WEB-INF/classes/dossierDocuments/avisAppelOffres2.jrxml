@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="avisAppelOffres2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="40aef478-fb3c-4366-8aa4-1eb99343a3e7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="paragraphe2" class="java.lang.String"/>
+	<parameter name="paragraphe1" class="java.lang.String"/>
+	<parameter name="heureOp" class="java.lang.Integer"/>
+	<parameter name="paragraphe6" class="java.lang.String"/>
+	<parameter name="anneeAppelOffre" class="java.lang.Integer"/>
+	<parameter name="minuteOp" class="java.lang.Integer"/>
+	<parameter name="estimation" class="java.math.BigDecimal"/>
+	<parameter name="cautionnementP" class="java.math.BigDecimal"/>
+	<parameter name="typeAo2" class="java.lang.String"/>
+	<parameter name="lieuOp" class="java.lang.String"/>
+	<parameter name="paragraphe3" class="java.lang.String"/>
+	<parameter name="dateOp" class="java.lang.String"/>
+	<parameter name="paragraphe4" class="java.lang.String"/>
+	<parameter name="paragraphe5" class="java.lang.String"/>
+	<parameter name="numAppelOffre" class="java.lang.Integer"/>
+	<parameter name="paragraphe7" class="java.lang.String"/>
+	<parameter name="objetAppelOffre" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-2" x="184" y="37" width="320" height="24" uuid="2f4c2c80-a4a3-49a9-a429-0dca1729c347"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true" isUnderline="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[OBJET :AVIS D4APPEL D4OFFRE OUVERTS N°]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,63 @@
+<div id="circle" class="row">
+      <div class="col-md-6">        
+           <button class="btn btn-default btn-lg"> <i class="fa fa-refresh fa-spin"></i>  </button>
+      </div>    
+</div>
+  
+<script type="text/javascript">
+function afficherBienEnregistrer(){
+	   		$("#dialogBienEnregistrer").dialog({
+	           autoOpen: true, 
+               buttons: {
+               OK: function() {
+                  $("#dialogBienEnregistrer").dialog("close");                   
+                  },
+               },
+               width: 465,
+               height: 195,       
+               position: {
+			       my: "center",
+			       at: "center",
+			       of: window,
+			       collision: "fit",
+			       // Ensure the titlebar is always visible
+			       using: function( pos ) {
+			     	   var topOffset = $( this ).css( pos ).offset().top;
+				       if ( topOffset < 0 ) {
+					   $( this ).css( "top", pos.top - topOffset );
+				       }
+			      }
+		       }             
+               });
+               $( "#dialogBienEnregistrer" ).dialog("open");
+	   };
+	   
+$('#deConnecter').click(function deConnecter() 
+    { 
+        $("#chargement").show();        
+        $.ajax( 
+        {           
+            type: "POST", 
+            enctype:"multipart/form-data",
+            url: "deConnecter.do", 
+            data:$("#formSeConnecter").serialize(),
+            dataType: "html", 
+            //timeout : 4000, 
+            error: function()
+            { 
+               $("#message").show();
+               $("#chargement").hide();                      
+            }, 
+            beforeSend : function() 
+            { 
+            }, 
+             success: function(html) 
+            {              
+                $("#chargement").hide();
+                $("#connecterUtilisateur").show();
+                location.reload(true);                    
+            } 
+        }); 
+    }
+    );
+</script>

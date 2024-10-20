@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Avis appel offreN°1" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="2676bd08-6a20-4faa-b275-fe6902b3a477">
+	<property name="ireport.scriptlethandling" value="2"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="objetPublication" class="java.lang.String"/>
+	<parameter name="nomJournal" class="java.lang.String"/>
+	<parameter name="avisAo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="132" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="165" height="97" uuid="ce8be849-cb8e-4718-a0d0-406ea2250cef"/>
+				<textElement>
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Royaume du Maroc
+Ministère de l'intérieur
+Préfecture d'Inezgane Ait Melloul Commune Dcheira El Jihadia
+Direction des services
+Division d'équipement
+Service Marche]]></text>
+			</staticText>
+			<image>
+				<reportElement x="452" y="0" width="83" height="97" uuid="009d7ab6-d2ca-4791-af47-f2b9485e857e"/>
+				<imageExpression><![CDATA["C:\\Users\\safouane\\Workspaces\\MyEclipse 10\\MarchesPublics\\WebRoot\\images\\Logo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="586" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-5" x="109" y="10" width="342" height="25" uuid="0ce36cd9-c2d7-454f-b3f1-bb3f661cb0bb"/>
+				<textElement>
+					<font fontName="CG Omega" size="14" isBold="true" isUnderline="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Le président de la commune de Dcheira El Jihadia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-6" x="245" y="35" width="16" height="17" uuid="6ea186eb-a3eb-42ce-906a-6d0cbbac5d6d"/>
+				<textElement>
+					<font fontName="CG Omega" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[A]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="343" width="302" height="27" uuid="53ccce57-4083-416f-9cd4-16de9e4bbac4"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Singé : Le président de la Commune Dcheira EL Jihadia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-6" x="29" y="139" width="44" height="27" uuid="c80d11e8-81d7-4e83-bc59-2c5952b3dd51"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="135" y="69" width="244" height="20" uuid="9ceff60c-b348-4d74-9728-83afafe12535"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-6" x="155" y="52" width="204" height="17" uuid="6a17df86-e833-474d-89d3-7d7d496c9191"/>
+				<textElement>
+					<font fontName="CG Omega" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monsieur le Directeur du journal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="73" y="139" width="452" height="50" uuid="dcb27b23-5d62-4b46-9b60-5b2e3f320ecf"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objetPublication}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-6" x="29" y="208" width="486" height="35" uuid="01c56464-2b71-4d97-aa38-96e59201f644"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[J'ai l'honneur de vous adresser l'avis envoyé à votre adresse électronique, pour publication dans votre journal.                                                                   ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-6" x="29" y="243" width="506" height="35" uuid="06a642c9-29b5-47f3-8c18-eb7b3188c1ff"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Veuillez agrées Monsieur le Directeur l'expression de mes salutations les plus distinguées.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

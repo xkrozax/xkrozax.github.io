@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="671f4743-8ba5-4fc4-948f-e03e8b01e43a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1155"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="78cb7854-f68a-45af-9575-7ed9b0d455fe"/>
+	<parameter name="numAppelOffre" class="java.lang.String"/>
+	<parameter name="anneeAppelOffre" class="java.lang.Integer"/>
+	<parameter name="objetAppelOffre" class="java.lang.String"/>
+	<parameter name="dateOp" class="java.lang.String"/>
+	<parameter name="heureOp" class="java.lang.Integer"/>
+	<parameter name="minuteOp" class="java.lang.Integer"/>
+	<parameter name="lieuOp" class="java.lang.String"/>
+	<parameter name="membre1Commssion" class="java.lang.String"/>
+	<parameter name="membre2Commssion" class="java.lang.String"/>
+	<parameter name="membre3Commssion" class="java.lang.String"/>
+	<parameter name="membre4Commssion" class="java.lang.String"/>
+	<parameter name="membre5Commssion" class="java.lang.String"/>
+	<parameter name="membre6Commssion" class="java.lang.String"/>
+	<parameter name="membre7Commssion" class="java.lang.String"/>
+	<parameter name="membre8Commssion" class="java.lang.String"/>
+	<parameter name="membre9Commssion" class="java.lang.String"/>
+	<parameter name="membre10Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre1Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre2Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre3Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre4Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre5Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre6Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre7Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre8Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre9Commssion" class="java.lang.String"/>
+	<parameter name="roleMembre10Commssion" class="java.lang.String"/>
+	<parameter name="numSeance" class="java.lang.Integer"/>
+	<parameter name="OffreAvantageuse" class="java.lang.String"/>
+	<parameter name="membre1SousCommssion" class="java.lang.String"/>
+	<parameter name="membre2SousCommssion" class="java.lang.String"/>
+	<parameter name="membre3SousCommssion" class="java.lang.String"/>
+	<parameter name="membre4SousCommssion" class="java.lang.String"/>
+	<parameter name="membre5SousCommssion" class="java.lang.String"/>
+	<parameter name="membre6SousCommssion" class="java.lang.String"/>
+	<parameter name="membre7SousCommssion" class="java.lang.String"/>
+	<parameter name="membre8SousCommssion" class="java.lang.String"/>
+	<parameter name="membre9SousCommssion" class="java.lang.String"/>
+	<parameter name="membre10SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre1SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre2SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre3SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre4SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre5SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre6SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre7SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre8SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre9SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre10SousCommssion" class="java.lang.String"/>
+	<parameter name="nomJournal1" class="java.lang.String"/>
+	<parameter name="nomJournal2" class="java.lang.String"/>
+	<parameter name="nomJournal3" class="java.lang.String"/>
+	<parameter name="nomJournal4" class="java.lang.String"/>
+	<parameter name="nomJournal5" class="java.lang.String"/>
+	<parameter name="nomJournal6" class="java.lang.String"/>
+	<parameter name="numAvis1" class="java.lang.String"/>
+	<parameter name="numAvis2" class="java.lang.String"/>
+	<parameter name="numAvis3" class="java.lang.String"/>
+	<parameter name="numAvis4" class="java.lang.String"/>
+	<parameter name="numAvis5" class="java.lang.String"/>
+	<parameter name="numAvis6" class="java.lang.String"/>
+	<parameter name="dateAvis1" class="java.lang.String"/>
+	<parameter name="dateAvis2" class="java.lang.String"/>
+	<parameter name="dateAvis3" class="java.lang.String"/>
+	<parameter name="dateAvis4" class="java.lang.String"/>
+	<parameter name="dateAvis5" class="java.lang.String"/>
+	<parameter name="dateAvis6" class="java.lang.String"/>
+	<parameter name="paragraphe1" class="java.lang.String"/>
+	<parameter name="paragraphe2" class="java.lang.String"/>
+	<parameter name="paragraphe3" class="java.lang.String"/>
+	<field name="nomConcurrent" class="java.lang.String"/>
+	<field name="ville" class="java.lang.String"/>
+	<field name="adresse" class="java.lang.String"/>
+	<field name="ecarterDat" class="java.lang.Integer"/>
+	<field name="motifsDat" class="java.lang.String"/>
+	<field name="admisReserve" class="java.lang.Integer"/>
+	<field name="ecarterOffreT" class="java.lang.Integer"/>
+	<field name="motifsOffreT" class="java.lang.String"/>
+	<field name="ecarterOffreF" class="java.lang.Integer"/>
+	<field name="motifsOffreF" class="java.lang.String"/>
+	<field name="offreAvantageuse" class="java.lang.Integer"/>
+	<field name="numOrdre" class="java.lang.Integer"/>
+	<field name="numListe" class="java.lang.Integer"/>
+	<field name="motifsAdmisReserve" class="java.lang.String"/>
+	<field name="motifsE" class="java.lang.String"/>
+	<field name="montantActeEngagement" class="java.lang.String"/>
+	<field name="motifsActeE" class="java.lang.String"/>
+	<field name="montantActeEngagement2" class="java.lang.String"/>
+	<field name="numParagraphe" class="java.lang.Integer"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="446">
+			<staticText>
+				<reportElement x="0" y="0" width="165" height="97" uuid="468582d4-fd28-41c8-bc5d-28734c0c2821"/>
+				<textElement>
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Royaume du Maroc
+Ministère de l'intérieur
+Prefecture d'Inezgane Ait Melloul Commune Dcheira El Jihadia
+Direction des services
+Division d'équipement
+Service Marche]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="165" y="75" width="284" height="22" forecolor="#006699" backcolor="#E6E6E6" uuid="72476582-6c2c-41e6-8d60-638f7713e676"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROCES VERBAL D’APPEL D’OFFRES OUVERT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="165" y="97" width="110" height="20" forecolor="#006699" uuid="104a9cf0-8fc2-4d3c-9309-cd4fca673b93"/>
+				<textElement textAlignment="Right">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numAppelOffre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="282" y="97" width="59" height="20" forecolor="#006699" uuid="097e7f6f-4a03-4787-8dd5-48ed09577e46"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Séance N° :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="341" y="97" width="100" height="20" forecolor="#006699" uuid="e90adbfb-d62c-4e3a-ace3-9ffbfcad2d90"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numSeance}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="138" y="146" width="27" height="20" uuid="70eb0fd6-b58d-4cf9-8751-f019ff7c9aab"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[min,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="146" width="21" height="20" uuid="c7309b67-8d33-4c03-9004-1822d98cd6e9"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="165" y="182" width="390" height="16" isRemoveLineWhenBlank="true" uuid="6d03113a-27b2-47d3-a240-e6583a3371b5"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre2Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="214" width="165" height="16" isRemoveLineWhenBlank="true" uuid="50d817d8-f3ba-4b79-b6d8-2dc9f500fbf9"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre4Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="146" width="12" height="20" uuid="e3a6db8e-533b-45e5-974a-08db3c73fa88"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{heureOp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="246" width="390" height="16" isRemoveLineWhenBlank="true" uuid="5764e03c-8ef5-484f-b0ef-dc795cc26d28"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre6Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="230" width="165" height="16" isRemoveLineWhenBlank="true" uuid="9f576c01-e010-4124-87db-faeb885b1689"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre5Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="230" width="390" height="16" isRemoveLineWhenBlank="true" uuid="53636706-98b3-4cd6-ae04-e7af27cecb47"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre5Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="166" width="390" height="16" isRemoveLineWhenBlank="true" uuid="af2ff05f-fe04-40c0-827e-7a82f2eb27a4"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre1Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="198" width="165" height="16" isRemoveLineWhenBlank="true" uuid="29acd66a-9e84-46cd-8f9c-bb4eb8ad6397"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre3Commssion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="165" y="146" width="329" height="20" uuid="0c8aa55c-1d88-4df2-8d92-c8f1e0638c1c"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[ la commission d'appel d'offres, est composée comme suit: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="166" width="165" height="16" isRemoveLineWhenBlank="true" uuid="422c2d5f-6ffe-4ee4-9528-3e08d4b1a74d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre1Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="198" width="390" height="16" isRemoveLineWhenBlank="true" uuid="a51100b3-e84b-4961-bc95-81039c5738e6"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre3Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="126" width="505" height="20" uuid="fddc16b6-f9fa-4072-8bb9-ad0b4b503398"/>
+				<textElement>
+					<font fontName="Calibri" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objetAppelOffre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="246" width="165" height="16" isRemoveLineWhenBlank="true" uuid="8c26d02c-ffc1-49a6-bc5b-91ba40227575"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre6Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="214" width="390" height="16" isRemoveLineWhenBlank="true" uuid="1e322dae-404f-4d66-9483-09b514015dba"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{roleMembre4Commssion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="110" y="146" width="14" height="20" uuid="8408f9f3-fead-43f3-90e9-bda680876490"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[H]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="124" y="146" width="14" height="20" uuid="6227049b-ef47-427b-9466-a25b695b9d6e"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{minuteOp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="126" width="50" height="20" uuid="17fd6114-535e-40fa-a594-d3a718f036e1"/>
+				<textElement>
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Relatif à :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="430" width="555" height="16" uuid="06821eae-fa69-49f6-b4c3-baa45fe7327e"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[A l'ouverture de la séance, le président dépose sur le bureau tous les plis reçus, à savoir:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="21" y="146" width="64" height="20" uuid="9fa948dd-63d2-4252-830f-3ed2983e477b"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateOp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="85" y="146" width="13" height="20" uuid="04f85874-a888-4fa5-ad34-8609beeb5bbd"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[à]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="182" width="165" height="16" isRemoveLineWhenBlank="true" uuid="12a39bad-98d0-418c-bb52-d7eb2c48590d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{membre2Commssion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="272" width="555" height="40" isRemoveLineWhenBlank="true" uuid="869433fe-4bf1-45d4-992e-a76380ec9c63"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="312" width="557" height="16" isRemoveLineWhenBlank="true" uuid="5e7ac613-eb44-4042-b535-ca5a7e8c770f"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paragraphe2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="328" width="555" height="16" isRemoveLineWhenBlank="true" uuid="ab97ff67-04e6-4779-97a1-a25b87adf8f8"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="408" width="555" height="16" isRemoveLineWhenBlank="true" uuid="03fa4305-f6fa-400c-95ee-dfe79ffa66bd"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="344" width="555" height="16" isRemoveLineWhenBlank="true" uuid="21db7353-e956-4910-b63b-883c4419b27a"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="392" width="555" height="16" isRemoveLineWhenBlank="true" uuid="3961ae9c-d2f7-458a-8dc3-23c51ab6fd63"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="376" width="555" height="16" isRemoveLineWhenBlank="true" uuid="85f329e1-826c-4679-99a8-de8c2855b087"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="360" width="555" height="16" isRemoveLineWhenBlank="true" uuid="abf51625-f9d1-484a-be80-ecf87b5be6d0"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 1]]></printWhenExpression>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 1]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="16" uuid="7e89174a-a7ac-4a13-9175-d88f258f2a42"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="28" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 2]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="28" uuid="efeeb946-0193-4323-8677-bf280b0a6b67"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Et invite ensuite les concurrents présents qui n'auraient pas déposé leurs plis, à les lui remettre séance tenante.
+Ont répondu à cette invitation:]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 2]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="16" uuid="8a744b75-6896-47cb-88d9-2639fe54b9b6"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="40" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 3]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="525" height="40" uuid="16d2a11b-b2d0-45ff-8f3d-b0e536d4385d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le président invite les concurrents qui se sont aperçus que leurs dossiers sont incomplets à produire les pièces manquantes sous enveloppes fermées.
+Ont répondu à cette invitation :
+]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 3]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="16" uuid="c507a9e0-b3b6-47d4-b20b-f547ed0b9752"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="17" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 4]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="525" height="16" uuid="4bdaf093-000d-4361-92dc-dc061793029c"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le président arrête, alors définitivement la liste des plis reçus ou déposés, comme suit:
+
+]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 4]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="16" uuid="f9c1c5c0-10e3-4fdc-a25d-ab31a096bf53"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="222">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 5]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="17" width="555" height="16" uuid="558dc987-a05c-474c-9bad-564709378a3a"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le président remet le support écrit contenant l'estimation des coûts détaillés des prestations.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="33" width="555" height="16" uuid="33b0b998-5f0d-475d-a274-3fba72e20f29"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Les membres de la commission paraphent le support de l'estimation des coûts des prestations.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="81" width="555" height="16" uuid="9cd53b26-1dcd-4b99-95a4-fe7fb433ace4"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[les vices éventuels qui entachent la procédure.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="97" width="555" height="16" uuid="2ad70f8d-bae7-49ea-a201-f1284752a964"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le président ouvre les enveloppes extérieures des plis contenant les dossiers des concurrents,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="113" width="555" height="16" uuid="8135afbe-0de4-49fc-8336-8ec14a493209"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[cite dans chacun d'eux la présence des enveloppes exigées. Il ouvre ensuite l'enveloppe portant la mention]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="129" width="555" height="16" uuid="3a1f862c-b95e-459c-a348-f65bd2e2f404"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[« dossiers administratif et technique », énonce les pièces contenues dans chaque dossier (administratif, technique)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="49" width="555" height="16" uuid="4bc29d22-c9b3-4d12-a01a-0b361090505b"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le président cite les journaux, les références de publication au portail des marchés publics]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="145" width="555" height="16" uuid="05ade855-f9ff-4eff-9a50-d5caba3f48df"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[et dresse un état des pièces fournies par chaque concurrent.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="161" width="555" height="16" uuid="286487f9-58e7-43a2-bb0c-9ea7737965bd"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Cette formalité accomplie, la séance publique est suspendue; les concurrents et le public se retirent de la salle.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="177" width="555" height="28" uuid="2efcbf65-8919-4cb7-9249-e65c5a219921"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Ensuite, la commission reprend la séance et se réunit à huis clos pour examiner les dossiers administratifs, techniques des concurrents, elle écarte les concurrents ci-après pour les motifs suivants:]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="205" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="65eaa88d-eb85-4045-bc30-828982b98e89"/>
+				<staticText>
+					<reportElement x="0" y="0" width="165" height="17" uuid="5586e1c0-6b40-40d9-adba-ab87e26a9dfd"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents éliminés]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="165" y="0" width="390" height="17" uuid="e9d6179d-4f5c-4232-be9e-c3a5c5c1b218"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Motifs des éliminations]]></text>
+				</staticText>
+			</frame>
+			<staticText>
+				<reportElement x="0" y="1" width="555" height="16" uuid="6f529823-5e21-4c5b-bc70-962624d6318a"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le président s'assure de la présence des membres dont la présence est obligatoire.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="65" width="555" height="16" uuid="590a7a58-4b2b-4ccf-aaf5-9eb64a214d4b"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[et le président demande aux membres de la commission de formuler leurs réserves ou observations sur]]></text>
+			</staticText>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 5]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="f2ed833a-29ae-426e-87a6-8efabeeffb34"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="165" height="16" uuid="da06a098-d2ed-4d8a-873a-675480ab20d3"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="165" y="0" width="390" height="16" uuid="621c217c-7a2d-498a-a773-4322964e508e"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{motifsDat}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="44">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 6]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="3" width="555" height="41" uuid="1ab6bef2-7a3b-410d-932b-305d16269d5e"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Elle arrête ensuite la liste des concurrents admissibles, en précisant ceux dont les dossiers comportent des erreurs matérielles, ou des discordances à rectifier, à savoir :
+- Liste des concurrents admissibles sans réserves :
+]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 6]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="16" uuid="8b49dfda-7885-442b-bfb3-a46925a874f1"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="35">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 7]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="18" uuid="56f7a208-9137-4aeb-8720-e675d2489dc3"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[- Liste des concurrents admissibles avec réserves :]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="18" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="d1664cff-f33e-4058-b6bc-55810df3eac2"/>
+				<staticText>
+					<reportElement x="0" y="0" width="165" height="17" uuid="a600e9e7-b9bd-47eb-8e79-8e99a67aa82b"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="165" y="0" width="390" height="17" uuid="7dd7bfb6-9edd-48e6-b5fd-5c1141a73033"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Objet de la réserve]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 7]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="996704ba-581a-4cb0-a848-a3aa288d92c4"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="165" height="16" uuid="3df35cf0-5f14-40cc-8e4a-c55de77bc685"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="165" y="0" width="390" height="16" uuid="0427d30c-385a-4676-9821-17be17522d73"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{motifsAdmisReserve}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="76">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 8]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="5" width="555" height="71" uuid="cd08a521-1fea-49d8-a73a-d3d6a7bd73ce"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[La séance publique est alors reprise et le président :
+- donne lecture de la liste des concurrents admissibles cités ci-dessus en précisant aux concurrents admis avec réserves l'objet de celles-ci ;
+- rend, contre décharge, aux concurrents écartés présents leurs dossiers, à l'exception des éléments d'information ayant été à l'origine de leur élimination. Il s'agit de :
+]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 8]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="16" uuid="c03ccc75-2778-48dd-9b07-ee21e9b8b949"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band>
+			<printWhenExpression><![CDATA[$F{numOrdre} == 9]]></printWhenExpression>
+		</band>
+		<band>
+			<printWhenExpression><![CDATA[$F{numListe} == 9]]></printWhenExpression>
+		</band>
+		<band>
+			<printWhenExpression><![CDATA[$F{numOrdre} == 10]]></printWhenExpression>
+		</band>
+		<band>
+			<printWhenExpression><![CDATA[$F{numListe} == 10]]></printWhenExpression>
+		</band>
+		<band>
+			<printWhenExpression><![CDATA[$F{numOrdre} == 11]]></printWhenExpression>
+		</band>
+		<band>
+			<printWhenExpression><![CDATA[$F{numListe} == 11]]></printWhenExpression>
+		</band>
+		<band height="53">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 12]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="5" width="555" height="31" uuid="0501e7fb-f825-4294-9a0f-88b867a85744"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Le président procède ensuite à l'ouverture des enveloppes des concurrents admissibles portant la mention « Offres financières » et donne lecture de la teneur des actes d'engagement, comme suit :]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="36" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="9fb662d7-cc61-43b5-8b85-7cdc2adb6cd2"/>
+				<staticText>
+					<reportElement x="0" y="0" width="206" height="17" uuid="5ed6bfb9-1d97-4fcc-8be3-c392481a0d2e"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="206" y="0" width="349" height="17" uuid="da7d5034-6459-4599-af0c-db91df0f62ac"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montants des actes d’engagement]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 12]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="22e94632-8f0b-4651-b65a-1ddf6cd93b4c"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="206" height="16" uuid="3d3b5820-1e85-4322-a606-fe53ce915811"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="206" y="0" width="160" height="16" uuid="aab9915d-694e-447b-a70f-f09d0f0b818f"/>
+					<textElement textAlignment="Right">
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{montantActeEngagement2}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="67">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 13]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="5" width="555" height="45" uuid="2e3120fd-3091-4620-b64b-be9d4ab259ff"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Les membres de la commission paraphent les actes d'engagement et les bordereaux  des  prix - détail estimatif (ou la décomposition du montant global)
+La commission poursuit alors ses travaux à huis clos. Elle écarte les concurrents suivants pour les motifs ci-après :
+]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="50" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="27e8fc23-0bad-4d96-bbde-b91b137625f7"/>
+				<staticText>
+					<reportElement x="0" y="0" width="165" height="17" uuid="10e7aeeb-ca7c-4d50-abf9-41832b425b69"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents éliminés]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="165" y="0" width="390" height="17" uuid="821f4774-0fd2-40c7-9a66-39fae73df852"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Motifs des éliminations]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 13]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="8b081bb7-b861-4d24-b619-fcb20c8c7275"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="165" height="16" uuid="d15b0d09-1314-45a9-9f58-2a880548f648"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="165" y="0" width="390" height="16" uuid="49194fe5-30ee-4b9b-a0c6-ccd945f5117c"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{motifsActeE}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="73">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 14]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="43" uuid="9770d9ee-d25d-41d4-b163-20438e2f7fd9"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Elle procède ensuite à la vérification des opérations arithmétiques des offres des concurrents admissibles et rectifie les erreurs de calculs relevées dans leurs actes d'engagement et rétablit les montants exacts des offres concernées.
+Ces rectifications donnent les résultats suivants :
+]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="43" width="555" height="30" forecolor="#CCCCCC" backcolor="#999999" uuid="32896305-3e84-408a-87d7-b4c76b9ac375"/>
+				<staticText>
+					<reportElement x="0" y="0" width="206" height="30" uuid="549d13db-ac46-44ba-affc-7264d0d5e4a5"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="206" y="0" width="176" height="30" uuid="8a234ee8-58ad-4a16-b27d-314ef5aa683d"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montant des actes d'engagement avant rectification]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="382" y="0" width="173" height="30" uuid="084df1ab-e481-480d-9ea5-25e0165d2d7c"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montant des actes d'engagements rectifiés]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 14]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="a6e14ee7-f28e-47aa-8206-1c92bfcde301"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="206" height="16" uuid="754e171a-3237-406d-a03b-2eac829bccab"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="206" y="0" width="156" height="16" uuid="c84273d1-7c3f-427b-97e3-c8b5a35c1951"/>
+					<textElement textAlignment="Right">
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{montantActeEngagement2}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="382" y="0" width="159" height="16" uuid="0281250b-8d00-4c80-b20a-194fbcc521c6"/>
+					<textElement textAlignment="Right">
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{montantActeEngagement}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="59">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 15]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="43" uuid="80f82edf-5ec4-415e-9ef8-ee504a60cdfb"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[La commission procède ensuite au classement des offres des concurrents suivant les critères fixés au règlement de consultation.
+Ce classement donne les résultats suivants :
+]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="43" width="555" height="16" forecolor="#CCCCCC" backcolor="#999999" uuid="3b4f6fd4-e905-4f87-abdd-dfd56f707a00"/>
+				<staticText>
+					<reportElement x="0" y="0" width="62" height="16" uuid="40211d54-342b-4d7f-a387-c9bec6a8d87c"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[N° d'ordre]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="62" y="0" width="261" height="15" uuid="3415d21a-2308-4e68-8a4d-7443bc16fbe1"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="323" y="0" width="232" height="15" uuid="611d16d5-e03d-4b5b-a1d0-6ae3891c170e"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montant des actes d'engagements]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 15]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="b6b561fb-f877-4ae8-9aca-3131893c4c14"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="62" y="0" width="261" height="16" uuid="3a2d9b8b-88b7-4535-bfca-46f943441656"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="323" y="0" width="160" height="16" uuid="77bf0cd2-54e1-487b-ac2a-b85e80d9ad77"/>
+					<textElement textAlignment="Right">
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{montantActeEngagement}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="11" y="0" width="51" height="16" uuid="70114866-a804-4c4a-88ef-b17d4d4f866d"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{numParagraphe}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="84">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 16]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="11" width="245" height="17" uuid="b6939416-be5a-426b-9029-d7f16d6afb32"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[L'offre la plus avantageuse est l'offre présentée par :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="28" width="555" height="56" uuid="4c5320cb-ac73-4999-b467-baf6e99d1786"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[La commission invite, le concurrent ayant présenté l'offre la plus avantageuse qui dans un délai de 7 jours à :
+- Produire les pièces du dossier administratif prévues  à l'article 09 des RC.
+- Justifier son offre lorsqu'elle est jugée anormalement basse ou le/les prix unitaires s'ils sont jugés anormalement bas ou excessifs.
+]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="245" y="12" width="310" height="16" uuid="57bf73a5-0fc2-411e-bbdc-a39ef6ea423d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OffreAvantageuse}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement x="189" y="0" width="95" height="17" uuid="6b02af35-728a-4704-8c74-57a8886c602d"/>
+				<textElement textAlignment="Right">
+					<font fontName="CG Omega" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numAppelOffre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

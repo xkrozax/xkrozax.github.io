@@ -1,0 +1,2446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="ajouterAppelOffreForm" type="com.yourcompany.struts.form.AjouterAppelOffreForm" />
+    <form-bean name="rechercherAppelOffreForm" type="com.yourcompany.struts.form.RechercherAppelOffreForm" />
+    <form-bean name="ouvrirAppelOffreForm" type="com.yourcompany.struts.form.OuvrirAppelOffreForm" />
+    <form-bean name="ajouterConcurrentForm" type="com.yourcompany.struts.form.AjouterConcurrentForm" />
+    <form-bean name="rechercherConcurrentForm" type="com.yourcompany.struts.form.RechercherConcurrentForm" />
+    <form-bean name="ajouterDepotEchantillonsForm" type="com.yourcompany.struts.form.AjouterDepotEchantillonsForm" />
+    <form-bean name="ajouterExamenDossiersATForm" type="com.yourcompany.struts.form.AjouterExamenDossiersATForm" />
+    <form-bean name="ajouterSeanceAOForm" type="com.yourcompany.struts.form.AjouterSeanceAOForm" />
+    <form-bean name="rechercherSeancesAOForm" type="com.yourcompany.struts.form.RechercherSeancesAOForm" />
+    <form-bean name="rechercherMembreCommissionForm" type="com.yourcompany.struts.form.RechercherMembreCommissionForm" />
+    <form-bean name="ajouterMembreCommissionForm" type="com.yourcompany.struts.form.AjouterMembreCommissionForm" />
+    <form-bean name="ajouterExamenOffreTForm" type="com.yourcompany.struts.form.AjouterExamenOffreTForm" />
+    <form-bean name="ajouterExamenActeEForm" type="com.yourcompany.struts.form.AjouterExamenActeEForm" />
+    <form-bean name="ajouterExamenEchantillonsForm" type="com.yourcompany.struts.form.AjouterExamenEchantillonsForm" />
+    <form-bean name="rechercherBordereauPrixForm" type="com.yourcompany.struts.form.RechercherBordereauPrixForm" />
+    <form-bean name="ajouterBordereauPrixForm" type="com.yourcompany.struts.form.AjouterBordereauPrixForm" />
+    <form-bean name="rechercherBordereauCForm" type="com.yourcompany.struts.form.RechercherBordereauCForm" />
+    <form-bean name="ajouterPrixBordereauCForm" type="com.yourcompany.struts.form.AjouterPrixBordereauCForm" />
+    <form-bean name="ajouterMontantVForm" type="com.yourcompany.struts.form.AjouterMontantVForm" />
+    <form-bean name="ajouterExamenNoteFForm" type="com.yourcompany.struts.form.AjouterExamenNoteFForm" />
+    <form-bean name="ajouterOffreAvantageuseForm" type="com.yourcompany.struts.form.AjouterOffreAvantageuseForm" />
+    <form-bean name="ajouterClassementOffreForm" type="com.yourcompany.struts.form.AjouterClassementOffreForm" />
+    <form-bean name="ajouterExamenCdForm" type="com.yourcompany.struts.form.AjouterExamenCdForm" />
+    <form-bean name="ajouterPublicationForm" type="com.yourcompany.struts.form.AjouterPublicationForm" />
+    <form-bean name="rechercherPublicationForm" type="com.yourcompany.struts.form.RechercherPublicationForm" />
+    <form-bean name="ajouterMembresCommission1Form" type="com.yourcompany.struts.form.AjouterMembresCommission1Form" />
+    <form-bean name="ajouterMembresCommission2Form" type="com.yourcompany.struts.form.AjouterMembresCommission2Form" />
+    <form-bean name="rechercherMembresCommission1Form" type="com.yourcompany.struts.form.RechercherMembresCommission1Form" />
+    <form-bean name="rechercherMembresCommission2Form" type="com.yourcompany.struts.form.RechercherMembresCommission2Form" />
+    <form-bean name="ajoutertypeBordereauForm" type="com.yourcompany.struts.form.AjoutertypeBordereauForm" />
+    <form-bean name="exporterPvSeanceForm" type="com.yourcompany.struts.form.ExporterPvSeanceForm" />
+    <form-bean name="ajouterMarchesForm" type="com.yourcompany.struts.form.AjouterMarchesForm" />
+    <form-bean name="rechercherMarchesForm" type="com.yourcompany.struts.form.RechercherMarchesForm" />
+    <form-bean name="ajouterSignatureMarchesForm" type="com.yourcompany.struts.form.AjouterSignatureMarchesForm" />
+    <form-bean name="ajouterEngagementMarchesForm" type="com.yourcompany.struts.form.AjouterEngagementMarchesForm" />
+    <form-bean name="ajouterApprobationMarchesForm" type="com.yourcompany.struts.form.AjouterApprobationMarchesForm" />
+    <form-bean name="rechercherAttachementsForm" type="com.yourcompany.struts.form.RechercherAttachementsForm" />
+    <form-bean name="ajouterAttachementForm" type="com.yourcompany.struts.form.AjouterAttachementForm" />
+    <form-bean name="rechercherBordreauMarchesForm" type="com.yourcompany.struts.form.RechercherBordreauMarchesForm" />
+    <form-bean name="ajouterPrixAttachementForm" type="com.yourcompany.struts.form.AjouterPrixAttachementForm" />
+    <form-bean name="ajouterLigneAttachementForm" type="com.yourcompany.struts.form.AjouterLigneAttachementForm" />
+    <form-bean name="rechercherLignesAttachementForm" type="com.yourcompany.struts.form.RechercherLignesAttachementForm" />
+    <form-bean name="ajouterPrixMarchesForm" type="com.yourcompany.struts.form.AjouterPrixMarchesForm" />
+    <form-bean name="rechercherAttachements2Form" type="com.yourcompany.struts.form.RechercherAttachements2Form" />
+    <form-bean name="rechercherDecompteForm" type="com.yourcompany.struts.form.RechercherDecompteForm" />
+    <form-bean name="enregistrerDecompteForm" type="com.yourcompany.struts.form.EnregistrerDecompteForm" />
+    <form-bean name="afficherDecompteForm" type="com.yourcompany.struts.form.AfficherDecompteForm" />
+    <form-bean name="ajouterEnregistrementMarchesForm" type="com.yourcompany.struts.form.AjouterEnregistrementMarchesForm" />
+    <form-bean name="ajouterCautionForm" type="com.yourcompany.struts.form.AjouterCautionForm" />
+    <form-bean name="modifierCautionForm" type="com.yourcompany.struts.form.ModifierCautionForm" />
+    <form-bean name="rechercherCautionForm" type="com.yourcompany.struts.form.RechercherCautionForm" />
+    <form-bean name="rechercherCautionDefinitiveForm" type="com.yourcompany.struts.form.RechercherCautionDefinitiveForm" />
+    <form-bean name="ajouterCautionDForm" type="com.yourcompany.struts.form.AjouterCautionDForm" />
+    <form-bean name="ajouterOrdreDeServiceForm" type="com.yourcompany.struts.form.AjouterOrdreDeServiceForm" />
+    <form-bean name="rechercherOrdreDeServiceForm" type="com.yourcompany.struts.form.RechercherOrdreDeServiceForm" />
+    <form-bean name="modifierOrdreDeServiceForm" type="com.yourcompany.struts.form.ModifierOrdreDeServiceForm" />
+    <form-bean name="ajouterModeOrdreDeServiceForm" type="com.yourcompany.struts.form.AjouterModeOrdreDeServiceForm" />
+    <form-bean name="rechercherDelaisExecutionForm" type="com.yourcompany.struts.form.RechercherDelaisExecutionForm" />
+    <form-bean name="modifierDelaiPrestationForm" type="com.yourcompany.struts.form.ModifierDelaiPrestationForm" />
+    <form-bean name="ajouterDelaiPrestationForm" type="com.yourcompany.struts.form.AjouterDelaiPrestationForm" />
+    <form-bean name="rechercherPenaliteDeRetardForm" type="com.yourcompany.struts.form.RechercherPenaliteDeRetardForm" />
+    <form-bean name="modifierSeanceForm" type="com.yourcompany.struts.form.ModifierSeanceForm" />
+    <form-bean name="modifierMembreCommissionForm" type="com.yourcompany.struts.form.ModifierMembreCommissionForm" />
+    <form-bean name="modifierConcurrentForm" type="com.yourcompany.struts.form.ModifierConcurrentForm" />
+    <form-bean name="exporterAvisAOForm" type="com.yourcompany.struts.form.ExporterAvisAOForm" />
+    <form-bean name="exporterPublicationForm" type="com.yourcompany.struts.form.ExporterPublicationForm" />
+    <form-bean name="modifierMembreCommission1Form" type="com.yourcompany.struts.form.ModifierMembreCommission1Form" />
+    <form-bean name="modifierMembreCommission2Form" type="com.yourcompany.struts.form.ModifierMembreCommission2Form" />
+    <form-bean name="exporterDecisionNominationMCForm" type="com.yourcompany.struts.form.ExporterDecisionNominationMCForm" />
+    <form-bean name="exporterConvocationMCForm" type="com.yourcompany.struts.form.ExporterConvocationMCForm" />
+    <form-bean name="rechercherSeances2AOForm" type="com.yourcompany.struts.form.RechercherSeances2AOForm" />
+    <form-bean name="ajouterOffreAvantageuse2Form" type="com.yourcompany.struts.form.AjouterOffreAvantageuse2Form" />
+    <form-bean name="rechercherConcurrentCdForm" type="com.yourcompany.struts.form.RechercherConcurrentCdForm" />
+    <form-bean name="rechercherResultatAOForm" type="com.yourcompany.struts.form.RechercherResultatAOForm" />
+    <form-bean name="imprimerDocumentForm" type="com.yourcompany.struts.form.ImprimerDocumentForm" />
+    <form-bean name="modifierJustificationAttributaireForm" type="com.yourcompany.struts.form.ModifierJustificationAttributaireForm" />
+    <form-bean name="exporterLettreConcurrentForm" type="com.yourcompany.struts.form.ExporterLettreConcurrentForm" />
+    <form-bean name="exporterLettreCDForm" type="com.yourcompany.struts.form.ExporterLettreCDForm" />
+    <form-bean name="modifierAppelOffreForm" type="com.yourcompany.struts.form.ModifierAppelOffreForm" />
+    <form-bean name="supprimerAppelOffreForm" type="com.yourcompany.struts.form.SupprimerAppelOffreForm" />
+    <form-bean name="modifierPublicationForm" type="com.yourcompany.struts.form.ModifierPublicationForm" />
+    <form-bean name="supprimerJournalAoForm" type="com.yourcompany.struts.form.SupprimerJournalAoForm" />
+    <form-bean name="supprimerPrixBordereauForm" type="com.yourcompany.struts.form.SupprimerPrixBordereauForm" />
+    <form-bean name="modifierPrixBordereauForm" type="com.yourcompany.struts.form.ModifierPrixBordereauForm" />
+    <form-bean name="supprimerPrixAttachementForm" type="com.yourcompany.struts.form.SupprimerPrixAttachementForm" />
+    <form-bean name="supprimerAttachementForm" type="com.yourcompany.struts.form.SupprimerAttachementForm" />
+    <form-bean name="supprimerMembreCommissionForm" type="com.yourcompany.struts.form.SupprimerMembreCommissionForm" />
+    <form-bean name="supprimerMembreCommissionOPForm" type="com.yourcompany.struts.form.SupprimerMembreCommissionOPForm" />
+    <form-bean name="supprimerMembreCommission2Form" type="com.yourcompany.struts.form.SupprimerMembreCommission2Form" />
+    <form-bean name="supprimerSeanceForm" type="com.yourcompany.struts.form.SupprimerSeanceForm" />
+    <form-bean name="supprimerConcurrentForm" type="com.yourcompany.struts.form.SupprimerConcurrentForm" />
+    <form-bean name="rechercherBonDeCommandeForm" type="com.yourcompany.struts.form.RechercherBonDeCommandeForm" />
+    <form-bean name="ajouterAppelOffreBCForm" type="com.yourcompany.struts.form.AjouterAppelOffreBCForm" />
+    <form-bean name="modifierAppelOffreBCForm" type="com.yourcompany.struts.form.ModifierAppelOffreBCForm" />
+    <form-bean name="ajouterOffreRetenueBCForm" type="com.yourcompany.struts.form.AjouterOffreRetenueBCForm" />
+    <form-bean name="rechercherOrdreDeService2Form" type="com.yourcompany.struts.form.RechercherOrdreDeService2Form" />
+    <form-bean name="rechercherReceptionProvisoireForm" type="com.yourcompany.struts.form.RechercherReceptionProvisoireForm" />
+    <form-bean name="ajouterReceptionForm" type="com.yourcompany.struts.form.AjouterReceptionForm" />
+    <form-bean name="modifierReceptionForm" type="com.yourcompany.struts.form.ModifierReceptionForm" />
+    <form-bean name="supprimerReceptionForm" type="com.yourcompany.struts.form.SupprimerReceptionForm" />
+    <form-bean name="rechercherMembreCommission3Form" type="com.yourcompany.struts.form.RechercherMembreCommission3Form" />
+    <form-bean name="ajouterMembreCommission3Form" type="com.yourcompany.struts.form.AjouterMembreCommission3Form" />
+    <form-bean name="modifierMembreCommission3Form" type="com.yourcompany.struts.form.ModifierMembreCommission3Form" />
+    <form-bean name="supprimerMembreCommission3Form" type="com.yourcompany.struts.form.SupprimerMembreCommission3Form" />
+    <form-bean name="rechercherReceptionDefinitiveForm" type="com.yourcompany.struts.form.RechercherReceptionDefinitiveForm" />
+    <form-bean name="ajouterOrdreDeServiceARForm" type="com.yourcompany.struts.form.AjouterOrdreDeServiceARForm" />
+    <form-bean name="ajouterModeOrdreDeServiceARForm" type="com.yourcompany.struts.form.AjouterModeOrdreDeServiceARForm" />
+    <form-bean name="supprimerOrdreDeServiceForm" type="com.yourcompany.struts.form.SupprimerOrdreDeServiceForm" />
+    <form-bean name="supprimerDelaiPrestationForm" type="com.yourcompany.struts.form.SupprimerDelaiPrestationForm" />
+    <form-bean name="genererOrdreDeNotificationForm" type="com.yourcompany.struts.form.GenererOrdreDeNotificationForm" />
+    <form-bean name="modifierConcurrent2Form" type="com.yourcompany.struts.form.ModifierConcurrent2Form" />
+    <form-bean name="modifierConcurrentAttributaireForm" type="com.yourcompany.struts.form.ModifierConcurrentAttributaireForm" />
+    <form-bean name="rechercherCautionConcurrentForm" type="com.yourcompany.struts.form.RechercherCautionConcurrentForm" />
+    <form-bean name="rechercherConcurrentAttributaireForm" type="com.yourcompany.struts.form.RechercherConcurrentAttributaireForm" />
+    <form-bean name="exporterOrdreDeServiceForm" type="com.yourcompany.struts.form.ExporterOrdreDeServiceForm" />
+    <form-bean name="rechercherlisteDesMarchesForm" type="com.yourcompany.struts.form.RechercherlisteDesMarchesForm" />
+    <form-bean name="enregistrerIntervenantForm" type="com.yourcompany.struts.form.EnregistrerIntervenantForm" />
+    <form-bean name="rechercherIntervenantsForm" type="com.yourcompany.struts.form.RechercherIntervenantsForm" />
+    <form-bean name="rechercherChefDeProjetForm" type="com.yourcompany.struts.form.RechercherChefDeProjetForm" />
+    <form-bean name="modifierChefDeProjetForm" type="com.yourcompany.struts.form.ModifierChefDeProjetForm" />
+    <form-bean name="supprimerChefDeProjetForm" type="com.yourcompany.struts.form.SupprimerChefDeProjetForm" />
+    <form-bean name="ajouterChefDeProjetForm" type="com.yourcompany.struts.form.AjouterChefDeProjetForm" />
+    <form-bean name="exporterCPSForm" type="com.yourcompany.struts.form.ExporterCPSForm" />
+    <form-bean name="rechercherArticlesCPSForm" type="com.yourcompany.struts.form.RechercherArticlesCPSForm" />
+    <form-bean name="modifierArticleForm" type="com.yourcompany.struts.form.ModifierArticleForm" />
+    <form-bean name="ajouterArticleForm" type="com.yourcompany.struts.form.AjouterArticleForm" />
+    <form-bean name="rechercherCautionRgForm" type="com.yourcompany.struts.form.RechercherCautionRgForm" />
+    <form-bean name="ajouterCautionRgForm" type="com.yourcompany.struts.form.AjouterCautionRgForm" />
+    <form-bean name="enregistrerTypeRgForm" type="com.yourcompany.struts.form.EnregistrerTypeRgForm" />
+    <form-bean name="supprimerCautionForm" type="com.yourcompany.struts.form.SupprimerCautionForm" />
+    <form-bean name="exporterPvReceptionForm" type="com.yourcompany.struts.form.ExporterPvReceptionForm" />
+    <form-bean name="ajouterNoteFinancement1Form" type="com.yourcompany.struts.form.AjouterNoteFinancement1Form" />
+    <form-bean name="ajouterNoteFinancement2Form" type="com.yourcompany.struts.form.AjouterNoteFinancement2Form" />
+    <form-bean name="exporterDecompteForm" type="com.yourcompany.struts.form.ExporterDecompteForm" />
+    <form-bean name="rechercherListeAppelOffreForm" type="com.yourcompany.struts.form.RechercherListeAppelOffreForm" />
+    <form-bean name="rechercherListeMarchesForm" type="com.yourcompany.struts.form.RechercherListeMarchesForm" />
+    <form-bean name="rechercherProgrammeForm" type="com.yourcompany.struts.form.RechercherProgrammeForm" />
+    <form-bean name="ajouterProgrammeForm" type="com.yourcompany.struts.form.AjouterProgrammeForm" />
+    <form-bean name="modifierProgrammeForm" type="com.yourcompany.struts.form.ModifierProgrammeForm" />
+    <form-bean name="supprimerProgrammeForm" type="com.yourcompany.struts.form.SupprimerProgrammeForm" />
+    <form-bean name="exporterProgrammeForm" type="com.yourcompany.struts.form.ExporterProgrammeForm" />
+    <form-bean name="exporterProgrammeTotalForm" type="com.yourcompany.struts.form.ExporterProgrammeTotalForm" />
+    <form-bean name="rechercherProgramme2Form" type="com.yourcompany.struts.form.RechercherProgramme2Form" />
+    <form-bean name="supprimerNotificationForm" type="com.yourcompany.struts.form.SupprimerNotificationForm" />
+    <form-bean name="exporterFicheTechniqueForm" type="com.yourcompany.struts.form.ExporterFicheTechniqueForm" />
+    <form-bean name="exporterRapportDePresentationForm" type="com.yourcompany.struts.form.ExporterRapportDePresentationForm" />
+    <form-bean name="rechercherRapportDePresentationForm" type="com.yourcompany.struts.form.RechercherRapportDePresentationForm" />
+    <form-bean name="ajouterRapportDePresentationForm" type="com.yourcompany.struts.form.AjouterRapportDePresentationForm" />
+    <form-bean name="exporterLettreConsultationForm" type="com.yourcompany.struts.form.ExporterLettreConsultationForm" />
+    <form-bean name="exporterPVForm" type="com.yourcompany.struts.form.ExporterPVForm" />
+    <form-bean name="ajouterLettreConsultationBCForm" type="com.yourcompany.struts.form.AjouterLettreConsultationBCForm" />
+    <form-bean name="authentifierForm" type="com.yourcompany.struts.form.AuthentifierForm" />
+    <form-bean name="ajouterFonctionnaireForm" type="com.yourcompany.struts.form.AjouterFonctionnaireForm" />
+    <form-bean name="ajouterAppelOffreContratForm" type="com.yourcompany.struts.form.AjouterAppelOffreContratForm" />
+    <form-bean name="modifierAppelOffreContratForm" type="com.yourcompany.struts.form.ModifierAppelOffreContratForm" />
+    <form-bean name="exporterMainLeveeCautionForm" type="com.yourcompany.struts.form.ExporterMainLeveeCautionForm" />
+    <form-bean name="rechercherValidationCPSForm" type="com.yourcompany.struts.form.RechercherValidationCPSForm" />
+    <form-bean name="validerCPSparServiceForm" type="com.yourcompany.struts.form.ValiderCPSparServiceForm" />
+    <form-bean name="validerCPSparDivisionForm" type="com.yourcompany.struts.form.ValiderCPSparDivisionForm" />
+    <form-bean name="ajouterCopieCPSForm" type="com.yourcompany.struts.form.AjouterCopieCPSForm" />
+    <form-bean name="modifierAttachementForm" type="com.yourcompany.struts.form.ModifierAttachementForm" />
+    <form-bean name="validerAttachementParChefProjetForm" type="com.yourcompany.struts.form.ValiderAttachementParChefProjetForm" />
+    <form-bean name="validerAttachementParServiceForm" type="com.yourcompany.struts.form.ValiderAttachementParServiceForm" />
+    <form-bean name="validerAttachementParDivisionForm" type="com.yourcompany.struts.form.ValiderAttachementParDivisionForm" />
+    <form-bean name="ajouterCopieAttachementForm" type="com.yourcompany.struts.form.AjouterCopieAttachementForm" />
+    <form-bean name="ajouterExamenActeEpourBCForm" type="com.yourcompany.struts.form.AjouterExamenActeEpourBCForm" />
+    <form-bean name="exporterListeAppelOffreForm" type="com.yourcompany.struts.form.ExporterListeAppelOffreForm" />
+    <form-bean name="exporterListeMarchesForm" type="com.yourcompany.struts.form.ExporterListeMarchesForm" />
+    <form-bean name="exporterListeDetailAOForm" type="com.yourcompany.struts.form.ExporterListeDetailAOForm" />
+    <form-bean name="exporterRapportAppelOffreForm" type="com.yourcompany.struts.form.ExporterRapportAppelOffreForm" />
+    <form-bean name="exporterDecompteDefinitifForm" type="com.yourcompany.struts.form.ExporterDecompteDefinitifForm" />
+    <form-bean name="rechercherIntervenantsSansSelecionForm" type="com.yourcompany.struts.form.RechercherIntervenantsSansSelecionForm" />
+    <form-bean name="supprimerIntervenantForm" type="com.yourcompany.struts.form.SupprimerIntervenantForm" />
+    <form-bean name="ajouterIntervenantForm" type="com.yourcompany.struts.form.AjouterIntervenantForm" />
+    <form-bean name="modifierIntervenantForm" type="com.yourcompany.struts.form.ModifierIntervenantForm" />
+    <form-bean name="exporterListeDetailsBCForm" type="com.yourcompany.struts.form.ExporterListeDetailsBCForm" />
+    <form-bean name="ajouterOperationFinanciereForm" type="com.yourcompany.struts.form.AjouterOperationFinanciereForm" />
+    <form-bean name="modifierOperationFinanciereForm" type="com.yourcompany.struts.form.ModifierOperationFinanciereForm" />
+    <form-bean name="supprimerOperationFinanciereForm" type="com.yourcompany.struts.form.SupprimerOperationFinanciereForm" />
+    <form-bean name="rechrcherOperationFinanciereForm" type="com.yourcompany.struts.form.RechrcherOperationFinanciereForm" />
+    <form-bean name="ajouterSousArticleForm" type="com.yourcompany.struts.form.AjouterSousArticleForm" />
+    <form-bean name="supprimerSousArticleForm" type="com.yourcompany.struts.form.SupprimerSousArticleForm" />
+    <form-bean name="modifierSousArticleForm" type="com.yourcompany.struts.form.ModifierSousArticleForm" />
+    <form-bean name="rechercherSousArticleForm" type="com.yourcompany.struts.form.RechercherSousArticleForm" />
+    <form-bean name="getArticleForm" type="com.yourcompany.struts.form.GetArticleForm" />
+    <form-bean name="getPrixSousArticleForm" type="com.yourcompany.struts.form.GetPrixSousArticleForm" />
+    <form-bean name="getSousArticleForm" type="com.yourcompany.struts.form.GetSousArticleForm" />
+    <form-bean name="exporterDepensesEnEspeceForm" type="com.yourcompany.struts.form.ExporterDepensesEnEspeceForm" />
+    <form-bean name="supprimerArticleDepensesForm" type="com.yourcompany.struts.form.SupprimerArticleDepensesForm" />
+    <form-bean name="ajouterArticleDepensesForm" type="com.yourcompany.struts.form.AjouterArticleDepensesForm" />
+    <form-bean name="rechercherArticleForm" type="com.yourcompany.struts.form.RechercherArticleForm" />
+    <form-bean name="modifierArticleDepensesForm" type="com.yourcompany.struts.form.ModifierArticleDepensesForm" />
+    <form-bean name="modifierStockInitialForm" type="com.yourcompany.struts.form.ModifierStockInitialForm" />
+    <form-bean name="exporterAttachementForm" type="com.yourcompany.struts.form.ExporterAttachementForm" />
+    <form-bean name="exporterAttachement2Form" type="com.yourcompany.struts.form.ExporterAttachement2Form" />
+    <form-bean name="ajouterPersonnelForm" type="com.yourcompany.struts.form.AjouterPersonnelForm" />
+    <form-bean name="modifierPersonnelForm" type="com.yourcompany.struts.form.ModifierPersonnelForm" />
+    <form-bean name="supprimerPersonnelForm" type="com.yourcompany.struts.form.SupprimerPersonnelForm" />
+    <form-bean name="rechercherListPersonnelForm" type="com.yourcompany.struts.form.RechercherListPersonnelForm" />
+    <form-bean name="rechercherBulletinPaieForm" type="com.yourcompany.struts.form.RechercherBulletinPaieForm" />
+    <form-bean name="rechercherListeBulletinPaieForm" type="com.yourcompany.struts.form.RechercherListeBulletinPaieForm" />
+    <form-bean name="supprimerBulletinPaieForm" type="com.yourcompany.struts.form.SupprimerBulletinPaieForm" />
+    <form-bean name="ajouterBulletinPaieForm" type="com.yourcompany.struts.form.AjouterBulletinPaieForm" />
+    <form-bean name="ouvrirSessionPersonnelForm" type="com.yourcompany.struts.form.OuvrirSessionPersonnelForm" />
+    <form-bean name="modifierBulletinPaieForm" type="com.yourcompany.struts.form.ModifierBulletinPaieForm" />
+    <form-bean name="validerBulletinPaieForm" type="com.yourcompany.struts.form.ValiderBulletinPaieForm" />
+    <form-bean name="ajouterListeBulletinPaieForm" type="com.yourcompany.struts.form.AjouterListeBulletinPaieForm" />
+    <form-bean name="exporterListePersonnelForm" type="com.yourcompany.struts.form.ExporterListePersonnelForm" />
+    <form-bean name="modifierDateReglementListeBulletinForm" type="com.yourcompany.struts.form.ModifierDateReglementListeBulletinForm" />
+    <form-bean name="rechercherDocumentPieceJointeForm" type="com.yourcompany.struts.form.RechercherDocumentPieceJointeForm" />
+    <form-bean name="ajouterDocumentPieceJointeForm" type="com.yourcompany.struts.form.AjouterDocumentPieceJointeForm" />
+    <form-bean name="supprimerDocumentPieceJointeForm" type="com.yourcompany.struts.form.SupprimerDocumentPieceJointeForm" />
+    <form-bean name="exporterJournalPaieForm" type="com.yourcompany.struts.form.ExporterJournalPaieForm" />
+    <form-bean name="modifierStatutMaterielForm" type="com.yourcompany.struts.form.ModifierStatutMaterielForm" />
+    <form-bean name="rechercherFournisseurForm" type="com.yourcompany.struts.form.RechercherFournisseurForm" />
+    <form-bean name="supprimerFournisseurForm" type="com.yourcompany.struts.form.SupprimerFournisseurForm" />
+    <form-bean name="ajouterFournisseurForm" type="com.yourcompany.struts.form.AjouterFournisseurForm" />
+    <form-bean name="modifierFournisseurForm" type="com.yourcompany.struts.form.ModifierFournisseurForm" />
+   
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="ajouterAppelOffreForm"
+      input="/AppelsOffres/LancementAO/AjouterAO.jsp"
+      name="ajouterAppelOffreForm"
+      path="/ajouterAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/LancementAO/ListeAjouterRefuser.jsp" />
+    </action>
+    <action
+      attribute="rechercherAppelOffreForm"
+      input="/AppelsOffres/LancementAO/ListeAppelsOffres.jsp"
+      name="rechercherAppelOffreForm"
+      path="/rechercherAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/AppelsOffres/LancementAO/ListeRechercherAO.jsp" />
+      <forward name="true3" path="/Marches/LancementMarches/ListeAjouterMarches.jsp" />
+      <forward name="true2" path="/Marches/LancementMarches/ListeRechercherMarches.jsp" />
+    </action>
+    <action
+      attribute="ouvrirAppelOffreForm"
+      input="/AppelsOffres/LancementAO/ListeAppelsOffres.jsp"
+      name="ouvrirAppelOffreForm"
+      path="/ouvrirAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.OuvrirAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterConcurrentForm"
+      input="/AppelsOffres/LancementAO/LancementAO.jsp"
+      name="ajouterConcurrentForm"
+      path="/ajouterConcurrent"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterConcurrentAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeConcurrents17.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/DossierBC/ListeConcurrents.jsp" />
+    </action>
+    <action
+      attribute="rechercherConcurrentForm"
+      input="/AppelsOffres/LancementAO/LancementAO.jsp"
+      name="rechercherConcurrentForm"
+      path="/rechercherConcurrent"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherConcurrentAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="trueBC5" path="/BonsDeCommande/EvaluationDesOffresBC/ListeConcurrents5.jsp" />
+      <forward name="trueBC4" path="/BonsDeCommande/EvaluationDesOffresBC/ListeConcurrents10.jsp" />
+      <forward name="trueBC3" path="/BonsDeCommande/EvaluationDesOffresBC/ListeConcurrents7.jsp" />
+      <forward name="trueBC2" path="/BonsDeCommande/OuvertureDesPlisBC/ListeConcurrents.jsp" />
+      <forward name="trueBC1" path="/BonsDeCommande/DossierBC/ListeConcurrents.jsp" />
+      <forward name="true11" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents11.jsp" />
+      <forward name="true12" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents12.jsp" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeConcurrents.jsp" />
+      <forward name="true10" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents10.jsp" />
+      <forward name="true7" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents7.jsp" />
+      <forward name="true6" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents6.jsp" />
+      <forward name="true9" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents9.jsp" />
+      <forward name="true17" path="/AppelsOffres/OuvertureDesPlis/ListeConcurrents17.jsp" />
+      <forward name="true8" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents8.jsp" />
+      <forward name="true16" path="/AppelsOffres/ResultatAO/ListeConcurrents16.jsp" />
+      <forward name="true14" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents14.jsp" />
+      <forward name="true13" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents13.jsp" />
+      <forward name="true3" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents3.jsp" />
+      <forward name="true2" path="/AppelsOffres/LancementAO/ListeConcurrents2.jsp" />
+      <forward name="true5" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents5.jsp" />
+      <forward name="true4" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents4.jsp" />
+    </action>
+    <action
+      attribute="ajouterDepotEchantillonsForm"
+      input="/AppelsOffres/LancementAO/LancementAO.jsp"
+      name="ajouterDepotEchantillonsForm"
+      path="/ajouterDepotEchantillons"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterDepotEchantillonsAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/LancementAO/ListeConcurrents2.jsp" />
+    </action>
+    <action
+      attribute="ajouterExamenDossiersATForm"
+      input="/AppelsOffres/LancementAO/LancementAO.jsp"
+      name="ajouterExamenDossiersATForm"
+      path="/ajouterExamenDossiersAT"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterExamenDossiersATAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents3.jsp" />
+    </action>
+    <action
+      attribute="ajouterSeanceAOForm"
+      input="/AppelsOffres/LancementAO.jsp"
+      name="ajouterSeanceAOForm"
+      path="/ajouterSeanceAO"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterSeanceAOAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeSeances.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/OuvertureDesPlisBC/ListeSeances.jsp" />
+      <forward name="true3" path="/AppelsOffres/SeancesAO/ListeSeances3.jsp" />
+    </action>
+    <action
+      attribute="rechercherSeancesAOForm"
+      input="/AppelsOffres/LancementAO/LancementAO.jsp"
+      name="rechercherSeancesAOForm"
+      path="/rechercherSeancesAO"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherSeancesAOAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeSeances.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/OuvertureDesPlisBC/ListeSeances.jsp" />
+      <forward name="true3" path="/AppelsOffres/SeancesAO/ListeSeances3.jsp" />
+      <forward name="true2" path="/AppelsOffres/SeancesAO/ListeSeances2.jsp" />
+      <forward name="true4" path="/AppelsOffres/SeancesAO/ListeSeances4.jsp" />
+    </action>
+    <action
+      attribute="rechercherMembreCommissionForm"
+      input="/AppelsOffres/LancementAO/LancementAO.jsp"
+      name="rechercherMembreCommissionForm"
+      path="/rechercherMembreCommission"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherMembreCommissionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/CommissionsAO/ListeMembresCommission.jsp" />
+    </action>
+    <action
+      attribute="ajouterMembreCommissionForm"
+      input="/AppelsOffres/LancementAO/LancementAO.jsp"
+      name="ajouterMembreCommissionForm"
+      path="/ajouterMembreCommission"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterMembreCommissionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/CommissionsAO/ListeMembresCommission.jsp" />
+    </action>
+    <action
+      attribute="ajouterExamenOffreTForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterExamenOffreTForm"
+      path="/ajouterExamenOffreT"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterExamenOffreTAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents4.jsp" />
+    </action>
+    <action
+      attribute="ajouterExamenActeEForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterExamenActeEForm"
+      path="/ajouterExamenActeE"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterExamenActeEAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents5.jsp" />
+    </action>
+    <action
+      attribute="ajouterExamenEchantillonsForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterExamenEchantillonsForm"
+      path="/ajouterExamenEchantillons"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterExamenEchantillonsAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents6.jsp" />
+    </action>
+    <action
+      attribute="rechercherBordereauPrixForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="rechercherBordereauPrixForm"
+      path="/rechercherBordereauPrix"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherBordereauPrixAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeBordereauPrix1.jsp" />
+      <forward name="true2" path="/BonsDeCommande/DossierBC/ListeBordereauPrix1.jsp" />
+    </action>
+    <action
+      attribute="ajouterBordereauPrixForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="ajouterBordereauPrixForm"
+      path="/ajouterBordereauPrix"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterBordereauPrixAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeBordereauPrix1.jsp" />
+      <forward name="true2" path="/BonsDeCommande/DossierBC/ListeBordereauPrix1.jsp" />
+    </action>
+    <action
+      attribute="rechercherBordereauCForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="rechercherBordereauCForm"
+      path="/rechercherBordereauC"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherBordereauCAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeBordereauPrix2.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/EvaluationDesOffresBC/ListeBordereauPrix2.jsp" />
+    </action>
+    <action
+      attribute="ajouterPrixBordereauCForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterPrixBordereauCForm"
+      path="/ajouterPrixBordereauC"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterPrixBordereauCAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeBordereauPrix2.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/EvaluationDesOffresBC/ListeBordereauPrix2.jsp" />
+    </action>
+    <action
+      attribute="ajouterMontantVForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterMontantVForm"
+      path="/ajouterMontantV"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterMontantVAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents8.jsp" />
+    </action>
+    <action
+      attribute="ajouterExamenNoteFForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterExamenNoteFForm"
+      path="/ajouterExamenNoteF"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterExamenNoteFAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents9.jsp" />
+    </action>
+    <action
+      attribute="ajouterOffreAvantageuseForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterOffreAvantageuseForm"
+      path="/ajouterOffreAvantageuse"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterOffreAvantageuseAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterClassementOffreForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterClassementOffreForm"
+      path="/ajouterClassementOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterClassementOffreAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true13" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents13.jsp" />
+      <forward name="true11" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents11.jsp" />
+      <forward name="true12" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents12.jsp" />
+      <forward name="true10" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents10.jsp" />
+    </action>
+    <action
+      attribute="ajouterExamenCdForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterExamenCdForm"
+      path="/ajouterExamenCd"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterExamenCdAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents15.jsp" />
+    </action>
+    <action
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      path="/rechercherJournaux"
+      type="com.yourcompany.struts.action.RechercherJournauxAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeJournaux1.jsp" />
+    </action>
+    <action
+      attribute="ajouterPublicationForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="ajouterPublicationForm"
+      path="/ajouterPublication"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterPublicationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListePublications.jsp" />
+    </action>
+    <action
+      attribute="rechercherPublicationForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="rechercherPublicationForm"
+      path="/rechercherPublication"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherPublicationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListePublications.jsp" />
+    </action>
+    <action
+      attribute="ajouterMembresCommission1Form"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="ajouterMembresCommission1Form"
+      path="/ajouterMembresCommission1"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterMembresCommission1Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission1.jsp" />
+    </action>
+    <action
+      attribute="ajouterMembresCommission2Form"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="ajouterMembresCommission2Form"
+      path="/ajouterMembresCommission2"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterMembresCommission2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission2.jsp" />
+    </action>
+    <action
+      attribute="rechercherMembresCommission1Form"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="rechercherMembresCommission1Form"
+      path="/rechercherMembresCommission1"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherMembresCommission1Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission1.jsp" />
+    </action>
+    <action
+      attribute="rechercherMembresCommission2Form"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="rechercherMembresCommission2Form"
+      path="/rechercherMembresCommission2"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherMembresCommission2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission2.jsp" />
+    </action>
+    <action
+      attribute="ajoutertypeBordereauForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="ajoutertypeBordereauForm"
+      path="/ajoutertypeBordereau"
+      scope="request"
+      type="com.yourcompany.struts.action.AjoutertypeBordereauAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterPvSeanceForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="exporterPvSeanceForm"
+      path="/exporterPvSeance"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterPvSeanceAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterMarchesForm"
+      input="/Marches/LancementMarches/AjouterMarches.jsp"
+      name="ajouterMarchesForm"
+      path="/ajouterMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterMarchesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/LancementMarches/ListeAjouterMarches.jsp" />
+    </action>
+    <action
+      attribute="rechercherMarchesForm"
+      input="/Marches/SignatureMarches/SignatureMarches.jsp"
+      name="rechercherMarchesForm"
+      path="/rechercherMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherMarchesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true6" path="/Marches/DossierMarches/ListeNoteFinancement.jsp" />
+      <forward name="trueBC2" path="/BonsDeCommande/ApprobationBC/ListeApprobationBC.jsp" />
+      <forward name="trueBC1" path="/BonsDeCommande/EngagementBC/ListeEngagementBC.jsp" />
+      <forward name="true1" path="/Marches/SignatureMarches/ListeSignatureMarches.jsp" />
+      <forward name="true3" path="/Marches/ApprobationMarches/ListeApprobationMarches.jsp" />
+      <forward name="true2" path="/Marches/EngagementMarches/ListeEngagementMarches.jsp" />
+      <forward name="true4" path="/Marches/EnregistrementMarches/ListeEnregistrementMarches.jsp" />
+    </action>
+    <action
+      attribute="ajouterSignatureMarchesForm"
+      input="/Marches/SignatureMarches/SignatureMarches.jsp"
+      name="ajouterSignatureMarchesForm"
+      path="/ajouterSignatureMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterSignatureMarchesAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterEngagementMarchesForm"
+      input="/Marches/EngagementMarches/EngagementMarches.jsp"
+      name="ajouterEngagementMarchesForm"
+      path="/ajouterEngagementMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterEngagementMarchesAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterApprobationMarchesForm"
+      input="/Marches/ApprobationMarches/ApprobationMarches.jsp"
+      name="ajouterApprobationMarchesForm"
+      path="/ajouterApprobationMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterApprobationMarchesAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherAttachementsForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherAttachementsForm"
+      path="/rechercherAttachements"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherAttachementsAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeAttachements.jsp" />
+    </action>
+    <action
+      attribute="ajouterAttachementForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="ajouterAttachementForm"
+      path="/ajouterAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterAttachementAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeAttachements.jsp" />
+    </action>
+    <action
+      attribute="rechercherBordreauMarchesForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherBordreauMarchesForm"
+      path="/rechercherBordreauMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherBordreauMarchesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeBordereaux.jsp" />
+    </action>
+    <action
+      attribute="ajouterPrixAttachementForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="ajouterPrixAttachementForm"
+      path="/ajouterPrixAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterPrixAttachementAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListePrixAttachement.jsp" />
+    </action>
+    <action
+      attribute="ajouterLigneAttachementForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="ajouterLigneAttachementForm"
+      path="/ajouterLigneAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterLigneAttachementAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherLignesAttachementForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherLignesAttachementForm"
+      path="/rechercherLignesAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherLignesAttachementAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListePrixAttachement.jsp" />
+    </action>
+    <action
+      attribute="ajouterPrixMarchesForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="ajouterPrixMarchesForm"
+      path="/ajouterPrixMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterPrixMarchesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListePrixAttachement.jsp" />
+    </action>
+    <action
+      attribute="rechercherAttachements2Form"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherAttachements2Form"
+      path="/rechercherAttachements2"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherAttachements2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeAttachements2.jsp" />
+    </action>
+    <action
+      attribute="rechercherDecompteForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherDecompteForm"
+      path="/rechercherDecompte"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherDecompteAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeDecomptes.jsp" />
+    </action>
+    <action
+      attribute="enregistrerDecompteForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="enregistrerDecompteForm"
+      path="/enregistrerDecompte"
+      scope="request"
+      type="com.yourcompany.struts.action.EnregistrerDecompteAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeDecomptes.jsp" />
+    </action>
+    <action
+      attribute="afficherDecompteForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="afficherDecompteForm"
+      path="/afficherDecompte"
+      scope="request"
+      type="com.yourcompany.struts.action.AfficherDecompteAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListePrixDecompte.jsp" />
+    </action>
+    <action
+      attribute="ajouterEnregistrementMarchesForm"
+      input="/Marches/EnregistrementMarches/EnregistrementMarches.jsp"
+      name="ajouterEnregistrementMarchesForm"
+      path="/ajouterEnregistrementMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterEnregistrementMarchesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/EnregistrementMarches/ListeEnregistrementMarches.jsp" />
+    </action>
+    <action
+      attribute="ajouterCautionForm"
+      input="/Marches/EnregistrementMarches/EnregistrementMarches.jsp"
+      name="ajouterCautionForm"
+      path="/ajouterCaution"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterCautionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/EnregistrementMarches/ListeCautions.jsp" />
+    </action>
+    <action
+      attribute="modifierCautionForm"
+      input="/Marches/EnregistrementMarches/EnregistrementMarches.jsp"
+      name="modifierCautionForm"
+      path="/modifierCaution"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierCautionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/EnregistrementMarches/ListeCautions.jsp" />
+    </action>
+    <action
+      attribute="rechercherCautionForm"
+      input="/Marches/EnregistrementMarches/EnregistrementMarches.jsp"
+      name="rechercherCautionForm"
+      path="/rechercherCaution"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherCautionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/EnregistrementMarches/ListeCautions.jsp" />
+    </action>
+    <action
+      attribute="rechercherCautionDefinitiveForm"
+      input="/Marches/EnregistrementMarches/EnregistrementMarches.jsp"
+      name="rechercherCautionDefinitiveForm"
+      path="/rechercherCautionDefinitive"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherCautionDefinitiveAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/EnregistrementMarches/ListeCautions2.jsp" />
+    </action>
+    <action
+      attribute="ajouterCautionDForm"
+      input="/Marches/EnregistrementMarches/EnregistrementMarches.jsp"
+      name="ajouterCautionDForm"
+      path="/ajouterCautionD"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterCautionDAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/EnregistrementMarches/ListeCautions2.jsp" />
+    </action>
+    <action
+      attribute="ajouterOrdreDeServiceForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="ajouterOrdreDeServiceForm"
+      path="/ajouterOrdreDeService"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterOrdreDeServiceAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeOrdreDeSevice.jsp" />
+    </action>
+    <action
+      attribute="rechercherOrdreDeServiceForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="rechercherOrdreDeServiceForm"
+      path="/rechercherOrdreDeService"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherOrdreDeServiceAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeOrdreDeSevice.jsp" />
+    </action>
+    <action
+      attribute="modifierOrdreDeServiceForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="modifierOrdreDeServiceForm"
+      path="/modifierOrdreDeService"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierOrdreDeServiceAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeOrdreDeSevice.jsp" />
+    </action>
+    <action
+      attribute="ajouterModeOrdreDeServiceForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="ajouterModeOrdreDeServiceForm"
+      path="/ajouterModeOrdreDeService"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterModeOrdreDeServiceAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeOrdreDeSevice.jsp" />
+    </action>
+    <action
+      attribute="rechercherDelaisExecutionForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="rechercherDelaisExecutionForm"
+      path="/rechercherDelaisExecution"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherDelaisExecutionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeDelaisExecution.jsp" />
+    </action>
+    <action
+      attribute="modifierDelaiPrestationForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="modifierDelaiPrestationForm"
+      path="/modifierDelaiPrestation"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierDelaiPrestationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeDelaisExecution.jsp" />
+    </action>
+    <action
+      attribute="ajouterDelaiPrestationForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="ajouterDelaiPrestationForm"
+      path="/ajouterDelaiPrestation"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterDelaiPrestationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeDelaisExecution.jsp" />
+    </action>
+    <action
+      attribute="rechercherPenaliteDeRetardForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="rechercherPenaliteDeRetardForm"
+      path="/rechercherPenaliteDeRetard"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherPenaliteDeRetardAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeDelaisRetard.jsp" />
+    </action>
+    <action
+      attribute="modifierSeanceForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="modifierSeanceForm"
+      path="/modifierSeance"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierSeanceAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeSeances.jsp" />
+    </action>
+    <action
+      attribute="modifierMembreCommissionForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="modifierMembreCommissionForm"
+      path="/modifierMembreCommission"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierMembreCommissionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/CommissionsAO/ListeMembresCommission.jsp" />
+    </action>
+    <action path="/rechercherFonctionnaire" type="com.yourcompany.struts.action.RechercherFonctionnaireAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeFonctionnaires.jsp" />
+    </action>
+    <action
+      attribute="modifierConcurrentForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="modifierConcurrentForm"
+      path="/modifierConcurrent"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierConcurrentAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeConcurrents.jsp" />
+    </action>
+    <action
+      attribute="exporterAvisAOForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="exporterAvisAOForm"
+      path="/exporterAvisAO"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterAvisAOAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeFichier.jsp" />
+    </action>
+    <action
+      attribute="exporterPublicationForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="exporterPublicationForm"
+      path="/exporterPublication"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterPublicationAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierMembreCommission1Form"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="modifierMembreCommission1Form"
+      path="/modifierMembreCommission1"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierMembreCommission1Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission1.jsp" />
+    </action>
+    <action
+      attribute="modifierMembreCommission2Form"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="modifierMembreCommission2Form"
+      path="/modifierMembreCommission2"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierMembreCommission2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission2.jsp" />
+    </action>
+    <action
+      attribute="exporterDecisionNominationMCForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="exporterDecisionNominationMCForm"
+      path="/exporterDecisionNominationMC"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterDecisionNominationMCAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterConvocationMCForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="exporterConvocationMCForm"
+      path="/exporterConvocationMC"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterConvocationMCAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherSeances2AOForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="rechercherSeances2AOForm"
+      path="/rechercherSeances2AO"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherSeances2AOAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/SeancesAO/ListeSeances5.jsp" />
+    </action>
+    <action
+      attribute="ajouterOffreAvantageuse2Form"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="ajouterOffreAvantageuse2Form"
+      path="/ajouterOffreAvantageuse2"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterOffreAvantageuse2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents15.jsp" />
+    </action>
+    <action
+      attribute="rechercherConcurrentCdForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="rechercherConcurrentCdForm"
+      path="/rechercherConcurrentCd"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherConcurrentCdAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/EvaluationDesOffres/ListeConcurrents15.jsp" />
+    </action>
+    <action
+      attribute="rechercherResultatAOForm"
+      input="/AppelsOffres/ResultatAO/ResultatAO.jsp"
+      name="rechercherResultatAOForm"
+      path="/rechercherResultatAO"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherResultatAOAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/ResultatAO/ListeResultatAO.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/ResultatBC/ListeResultatAO.jsp" />
+    </action>
+    <action
+      attribute="imprimerDocumentForm"
+      input="/AppelsOffres/ResultatAO/ResultatAO.jsp"
+      name="imprimerDocumentForm"
+      path="/imprimerDocument"
+      scope="request"
+      type="com.yourcompany.struts.action.ImprimerDocumentAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierJustificationAttributaireForm"
+      input="/AppelsOffres/ResultatAO/ResultatAO.jsp"
+      name="modifierJustificationAttributaireForm"
+      path="/modifierJustificationAttributaire"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierJustificationAttributaireAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/ResultatAO/ListeResultatAO.jsp" />
+    </action>
+    <action
+      attribute="exporterLettreConcurrentForm"
+      input="/AppelsOffres/ResultatAO/ResultatAO.jsp"
+      name="exporterLettreConcurrentForm"
+      path="/exporterLettreConcurrent"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterLettreConcurrentAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterLettreCDForm"
+      input="/AppelsOffres/EvaluationDesOffres/EvaluationDesOffres.jsp"
+      name="exporterLettreCDForm"
+      path="/exporterLettreCD"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterLettreCDAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierAppelOffreForm"
+      input="/AppelsOffres/ListeAppelsOffres.jsp"
+      name="modifierAppelOffreForm"
+      path="/modifierAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerAppelOffreForm"
+      input="/AppelsOffres/ListeAppelsOffres.jsp"
+      name="supprimerAppelOffreForm"
+      path="/supprimerAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierPublicationForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="modifierPublicationForm"
+      path="/modifierPublication"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierPublicationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListePublications.jsp" />
+    </action>
+    <action
+      attribute="supprimerJournalAoForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="supprimerJournalAoForm"
+      path="/supprimerJournalAo"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerJournalAoAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerPrixBordereauForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="supprimerPrixBordereauForm"
+      path="/supprimerPrixBordereau"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerPrixBordereauAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeBordereauPrix1.jsp" />
+    </action>
+    <action
+      attribute="modifierPrixBordereauForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="modifierPrixBordereauForm"
+      path="/modifierPrixBordereau"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierPrixBordereauAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeBordereauPrix1.jsp" />
+      <forward name="true2" path="/BonsDeCommande/DossierBC/ListeBordereauPrix1.jsp" />
+    </action>
+    <action
+      attribute="supprimerPrixAttachementForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="supprimerPrixAttachementForm"
+      path="/supprimerPrixAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerPrixAttachementAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListePrixAttachement.jsp" />
+    </action>
+    <action
+      attribute="supprimerAttachementForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="supprimerAttachementForm"
+      path="/supprimerAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerAttachementAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeAttachements.jsp" />
+    </action>
+    <action
+      attribute="supprimerMembreCommissionForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="supprimerMembreCommissionForm"
+      path="/supprimerMembreCommission"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerMembreCommissionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission1.jsp" />
+    </action>
+    <action
+      attribute="supprimerMembreCommissionOPForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="supprimerMembreCommissionOPForm"
+      path="/supprimerMembreCommissionOP"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerMembreCommissionOPAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/CommissionsAO/ListeMembresCommission.jsp" />
+    </action>
+    <action
+      attribute="supprimerMembreCommission2Form"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="supprimerMembreCommission2Form"
+      path="/supprimerMembreCommission2"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerMembreCommission2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/PreparationOuverturePlis/ListeMembresCommission2.jsp" />
+    </action>
+    <action
+      attribute="supprimerSeanceForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="supprimerSeanceForm"
+      path="/supprimerSeance"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerSeanceAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeSeances.jsp" />
+    </action>
+    <action
+      attribute="supprimerConcurrentForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="supprimerConcurrentForm"
+      path="/supprimerConcurrent"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerConcurrentAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeConcurrents.jsp" />
+    </action>
+    <action
+      attribute="rechercherBonDeCommandeForm"
+      input="/BonsDeCommande/ListeBonsDeCommande.jsp"
+      name="rechercherBonDeCommandeForm"
+      path="/rechercherBonDeCommande"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherBonDeCommandeAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/BonsDeCommande/LancementBC/ListeRechercherBC.jsp" />
+    </action>
+    <action
+      attribute="ajouterAppelOffreBCForm"
+      input="/BonsDeCommande/LancementBC/AjouterBC.jsp"
+      name="ajouterAppelOffreBCForm"
+      path="/ajouterAppelOffreBC"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterAppelOffreBCAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/LancementAO/ListeAjouterRefuser.jsp" />
+    </action>
+    <action
+      attribute="modifierAppelOffreBCForm"
+      input="/BonsDeCommande/ListeBonsDeCommande.jsp"
+      name="modifierAppelOffreBCForm"
+      path="/modifierAppelOffreBC"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierAppelOffreBCAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterOffreRetenueBCForm"
+      input="/BonsDeCommande/EvaluationDesOffresBC/EvaluationDesOffresBC.jsp"
+      name="ajouterOffreRetenueBCForm"
+      path="/ajouterOffreRetenueBC"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterOffreRetenueBCAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/BonsDeCommande/EvaluationDesOffresBC/ListeConcurrents10.jsp" />
+    </action>
+    <action
+      attribute="rechercherOrdreDeService2Form"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="rechercherOrdreDeService2Form"
+      path="/rechercherOrdreDeService2"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherOrdreDeService2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeOrdreDeSeviceAR.jsp" />
+    </action>
+    <action
+      attribute="rechercherReceptionProvisoireForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherReceptionProvisoireForm"
+      path="/rechercherReceptionProvisoire"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherReceptionProvisoireAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeReceptionProvisoire.jsp" />
+    </action>
+    <action
+      attribute="ajouterReceptionForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="ajouterReceptionForm"
+      path="/ajouterReception"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterReceptionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/Marches/ReceptionMarches/ListeReceptionProvisoire.jsp" />
+      <forward name="true2" path="/Marches/ReceptionMarches/ListeReceptionDefinitive.jsp" />
+    </action>
+    <action
+      attribute="modifierReceptionForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="modifierReceptionForm"
+      path="/modifierReception"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierReceptionAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerReceptionForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="supprimerReceptionForm"
+      path="/supprimerReception"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerReceptionAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherMembreCommission3Form"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherMembreCommission3Form"
+      path="/rechercherMembreCommission3"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherMembreCommission3Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeMembresCommissionR.jsp" />
+    </action>
+    <action
+      attribute="ajouterMembreCommission3Form"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="ajouterMembreCommission3Form"
+      path="/ajouterMembreCommission3"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterMembreCommission3Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeMembresCommissionR.jsp" />
+    </action>
+    <action
+      attribute="modifierMembreCommission3Form"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="modifierMembreCommission3Form"
+      path="/modifierMembreCommission3"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierMembreCommission3Action">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerMembreCommission3Form"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="supprimerMembreCommission3Form"
+      path="/supprimerMembreCommission3"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerMembreCommission3Action">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherReceptionDefinitiveForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="rechercherReceptionDefinitiveForm"
+      path="/rechercherReceptionDefinitive"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherReceptionDefinitiveAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/ReceptionMarches/ListeReceptionDefinitive.jsp" />
+    </action>
+    <action
+      attribute="ajouterOrdreDeServiceARForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="ajouterOrdreDeServiceARForm"
+      path="/ajouterOrdreDeServiceAR"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterOrdreDeServiceARAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeOrdreDeSeviceAR.jsp" />
+    </action>
+    <action
+      attribute="ajouterModeOrdreDeServiceARForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="ajouterModeOrdreDeServiceARForm"
+      path="/ajouterModeOrdreDeServiceAR"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterModeOrdreDeServiceARAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeOrdreDeSeviceAR.jsp" />
+    </action>
+    <action
+      attribute="supprimerOrdreDeServiceForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="supprimerOrdreDeServiceForm"
+      path="/supprimerOrdreDeService"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerOrdreDeServiceAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerDelaiPrestationForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="supprimerDelaiPrestationForm"
+      path="/supprimerDelaiPrestation"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerDelaiPrestationAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="genererOrdreDeNotificationForm"
+      input="/Marches/ApprobationMarches/ApprobationMarches.jsp"
+      name="genererOrdreDeNotificationForm"
+      path="/genererOrdreDeNotification"
+      scope="request"
+      type="com.yourcompany.struts.action.GenererOrdreDeNotificationAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierConcurrent2Form"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="modifierConcurrent2Form"
+      path="/modifierConcurrent2"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierConcurrent2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeConcurrents17.jsp" />
+    </action>
+    <action
+      attribute="modifierConcurrentAttributaireForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="modifierConcurrentAttributaireForm"
+      path="/modifierConcurrentAttributaire"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierConcurrentAttributaireAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeAttributaire.jsp" />
+    </action>
+    <action
+      attribute="rechercherCautionConcurrentForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="rechercherCautionConcurrentForm"
+      path="/rechercherCautionConcurrent"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherCautionConcurrentAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/OuvertureDesPlis/ListeCautionsConcurrents.jsp" />
+    </action>
+    <action
+      attribute="rechercherConcurrentAttributaireForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="rechercherConcurrentAttributaireForm"
+      path="/rechercherConcurrentAttributaire"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherConcurrentAttributaireAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeAttributaire.jsp" />
+    </action>
+    <action
+      attribute="exporterOrdreDeServiceForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="exporterOrdreDeServiceForm"
+      path="/exporterOrdreDeService"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterOrdreDeServiceAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherlisteDesMarchesForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="rechercherlisteDesMarchesForm"
+      path="/rechercherlisteDesMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherlisteDesMarchesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeIntervenants.jsp" />
+    </action>
+    <action
+      attribute="enregistrerIntervenantForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="enregistrerIntervenantForm"
+      path="/enregistrerIntervenant"
+      scope="request"
+      type="com.yourcompany.struts.action.EnregistrerIntervenantAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherIntervenantsForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="rechercherIntervenantsForm"
+      path="/rechercherIntervenants"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherIntervenantsAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeIntervenants.jsp" />
+    </action>
+    <action
+      attribute="rechercherChefDeProjetForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="rechercherChefDeProjetForm"
+      path="/rechercherChefDeProjet"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherChefDeProjetAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeChefDeProjet.jsp" />
+    </action>
+    <action
+      attribute="modifierChefDeProjetForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="modifierChefDeProjetForm"
+      path="/modifierChefDeProjet"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierChefDeProjetAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerChefDeProjetForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="supprimerChefDeProjetForm"
+      path="/supprimerChefDeProjet"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerChefDeProjetAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterChefDeProjetForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="ajouterChefDeProjetForm"
+      path="/ajouterChefDeProjet"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterChefDeProjetAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeChefDeProjet.jsp" />
+    </action>
+    <action
+      attribute="exporterCPSForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="exporterCPSForm"
+      path="/exporterCPS"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterCPSAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherArticlesCPSForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="rechercherArticlesCPSForm"
+      path="/rechercherArticlesCPS"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherArticlesCPSAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeArticleCPS.jsp" />
+    </action>
+    <action
+      attribute="modifierArticleForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="modifierArticleForm"
+      path="/modifierArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeArticleCPS.jsp" />
+    </action>
+    <action
+      attribute="ajouterArticleForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="ajouterArticleForm"
+      path="/ajouterArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeArticleCPS.jsp" />
+    </action>
+    <action
+      attribute="rechercherCautionRgForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="rechercherCautionRgForm"
+      path="/rechercherCautionRg"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherCautionRgAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeCautionsRg.jsp" />
+    </action>
+    <action
+      attribute="ajouterCautionRgForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="ajouterCautionRgForm"
+      path="/ajouterCautionRg"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterCautionRgAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeCautionsRg.jsp" />
+    </action>
+    <action
+      attribute="enregistrerTypeRgForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="enregistrerTypeRgForm"
+      path="/enregistrerTypeRg"
+      scope="request"
+      type="com.yourcompany.struts.action.EnregistrerTypeRgAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ListeCautionsRg.jsp" />
+    </action>
+    <action
+      attribute="supprimerCautionForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="supprimerCautionForm"
+      path="/supprimerCaution"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerCautionAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterPvReceptionForm"
+      input="/Marches/ReceptionMarches/ReceptionMarches.jsp"
+      name="exporterPvReceptionForm"
+      path="/exporterPvReception"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterPvReceptionAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterNoteFinancement1Form"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="ajouterNoteFinancement1Form"
+      path="/ajouterNoteFinancement1"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterNoteFinancement1Action">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterNoteFinancement2Form"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="ajouterNoteFinancement2Form"
+      path="/ajouterNoteFinancement2"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterNoteFinancement2Action">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterDecompteForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="exporterDecompteForm"
+      path="/exporterDecompte"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterDecompteAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherListeAppelOffreForm"
+      input="/AppelsOffres/ListeAppelsOffres.jsp"
+      name="rechercherListeAppelOffreForm"
+      path="/rechercherListeAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherListeAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="trueCTD" path="/Contrats/LancementBC/ListeRechercherBC.jsp" />
+      <forward name="true" path="/AppelsOffres/LancementAO/ListeRechercherAO.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/LancementBC/ListeRechercherBC.jsp" />
+      <forward name="true2" path="/Marches/LancementMarches/ListeAjouterMarches.jsp" />
+    </action>
+    <action
+      attribute="rechercherListeMarchesForm"
+      input="/Marches/LancementMarches/ListeMarches.jsp"
+      name="rechercherListeMarchesForm"
+      path="/rechercherListeMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherListeMarchesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/LancementMarches/ListeRechercherMarches.jsp" />
+    </action>
+    <action
+      attribute="rechercherProgrammeForm"
+      input="/ProgrammesPrevisionnels/ProgrammePrevisionnel.jsp"
+      name="rechercherProgrammeForm"
+      path="/rechercherProgramme"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherProgrammeAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/ProgrammesPrevisionnels/ListeProgramme.jsp" />
+    </action>
+    <action
+      attribute="ajouterProgrammeForm"
+      input="/ProgrammesPrevisionnels/ProgrammePrevisionnel.jsp"
+      name="ajouterProgrammeForm"
+      path="/ajouterProgramme"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterProgrammeAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/ProgrammesPrevisionnels/ListeProgramme.jsp" />
+    </action>
+    <action
+      attribute="modifierProgrammeForm"
+      input="/ProgrammesPrevisionnels/ProgrammePrevisionnel.jsp"
+      name="modifierProgrammeForm"
+      path="/modifierProgramme"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierProgrammeAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerProgrammeForm"
+      input="/ProgrammesPrevisionnels/ProgrammePrevisionnel.jsp"
+      name="supprimerProgrammeForm"
+      path="/supprimerProgramme"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerProgrammeAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/ProgrammesPrevisionnels/ListeProgramme.jsp" />
+    </action>
+    <action
+      attribute="exporterProgrammeForm"
+      input="/ProgrammesPrevisionnels/ProgrammePrevisionnel.jsp"
+      name="exporterProgrammeForm"
+      path="/exporterProgramme"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterProgrammeAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterProgrammeTotalForm"
+      input="/ProgrammesPrevisionnels/ProgrammePrevisionnel.jsp"
+      name="exporterProgrammeTotalForm"
+      path="/exporterProgrammeTotal"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterProgrammeTotalAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherProgramme2Form"
+      input="/AppelsOffres/LancementAO/AjouterAO.jsp"
+      name="rechercherProgramme2Form"
+      path="/rechercherProgramme2"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherProgramme2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/LancementAO/ListeProgramme.jsp" />
+    </action>
+    <action
+      input="/Notifications/Notifications.jsp"
+      path="/rechercherNotification"
+      type="com.yourcompany.struts.action.RechercherNotificationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Notifications/ListeNotifications.jsp" />
+    </action>
+    <action
+      input="/Notifications/Notifications.jsp"
+      path="/rechercherNombreNotification"
+      type="com.yourcompany.struts.action.RechercherNombreNotificationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Notifications/Notifications.jsp" />
+    </action>
+    <action
+      attribute="supprimerNotificationForm"
+      input="/Notifications/Notifications.jsp"
+      name="supprimerNotificationForm"
+      path="/supprimerNotification"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerNotificationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Notifications/ListeNotifications.jsp" />
+    </action>
+    <action
+      attribute="exporterFicheTechniqueForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="exporterFicheTechniqueForm"
+      path="/exporterFicheTechnique"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterFicheTechniqueAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterRapportDePresentationForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="exporterRapportDePresentationForm"
+      path="/exporterRapportDePresentation"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterRapportDePresentationAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherRapportDePresentationForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="rechercherRapportDePresentationForm"
+      path="/rechercherRapportDePresentation"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherRapportDePresentationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeRapportDePresentation.jsp" />
+    </action>
+    <action
+      attribute="ajouterRapportDePresentationForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="ajouterRapportDePresentationForm"
+      path="/ajouterRapportDePresentation"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterRapportDePresentationAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeRapportDePresentation.jsp" />
+    </action>
+    <action
+      attribute="exporterLettreConsultationForm"
+      input="/BonsDeCommande/DossierBC/DossierBC.jsp"
+      name="exporterLettreConsultationForm"
+      path="/exporterLettreConsultation"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterLettreConsultationAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterPVForm"
+      input="/BonsDeCommande/ResultatBC/ResultatBC.jsp"
+      name="exporterPVForm"
+      path="/exporterPV"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterPVAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterLettreConsultationBCForm"
+      input="/BonsDeCommande/DossierBC/DossierBC.jsp"
+      name="ajouterLettreConsultationBCForm"
+      path="/ajouterLettreConsultationBC"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterLettreConsultationBCAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="authentifierForm"
+      input="/GestionMarchesPublics.jsp"
+      name="authentifierForm"
+      path="/authentifier"
+      scope="request"
+      type="com.yourcompany.struts.action.AuthentifierAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/Utilisateurs/AuthentificationCorrecte.jsp" />
+      <forward name="true2" path="/Utilisateurs/AuthentificationNonCorrecte.jsp" />
+    </action>
+    <action
+      input="/GestionMarchesPublics.jsp"
+      path="/deConnecter"
+      type="com.yourcompany.struts.action.DeConnecterAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterFonctionnaireForm"
+      input="/AppelsOffres/PreparationOuverturePlis/PreparationOuverturePlis.jsp"
+      name="ajouterFonctionnaireForm"
+      path="/ajouterFonctionnaire"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterFonctionnaireAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterAppelOffreContratForm"
+      input="/Contrats/LancementBC/AjouterBC.jsp"
+      name="ajouterAppelOffreContratForm"
+      path="/ajouterAppelOffreContrat"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterAppelOffreContratAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/LancementAO/ListeAjouterRefuser.jsp" />
+    </action>
+    <action
+      attribute="modifierAppelOffreContratForm"
+      input="/Contrats/DossierBC/DossierBC.jsp"
+      name="modifierAppelOffreContratForm"
+      path="/modifierAppelOffreContrat"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierAppelOffreContratAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterMainLeveeCautionForm"
+      input="/AppelsOffres/OuvertureDesPlis/OuvertureDesPlis.jsp"
+      name="exporterMainLeveeCautionForm"
+      path="/exporterMainLeveeCaution"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterMainLeveeCautionAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherValidationCPSForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="rechercherValidationCPSForm"
+      path="/rechercherValidationCPS"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherValidationCPSAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/ListeValidationCPS.jsp" />
+    </action>
+    <action
+      attribute="validerCPSparServiceForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="validerCPSparServiceForm"
+      path="/validerCPSparService"
+      scope="request"
+      type="com.yourcompany.struts.action.ValiderCPSparServiceAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="validerCPSparDivisionForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="validerCPSparDivisionForm"
+      path="/validerCPSparDivision"
+      scope="request"
+      type="com.yourcompany.struts.action.ValiderCPSparDivisionAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterCopieCPSForm"
+      input="/AppelsOffres/DossierAO/DossierAO.jsp"
+      name="ajouterCopieCPSForm"
+      path="/ajouterCopieCPS"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterCopieCPSAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/AppelsOffres/DossierAO/DossierAppelOffre.jsp" />
+    </action>
+    <action
+      attribute="modifierAttachementForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="modifierAttachementForm"
+      path="/modifierAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierAttachementAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="validerAttachementParChefProjetForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="validerAttachementParChefProjetForm"
+      path="/validerAttachementParChefProjet"
+      scope="request"
+      type="com.yourcompany.struts.action.ValiderAttachementParChefProjetAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="validerAttachementParServiceForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="validerAttachementParServiceForm"
+      path="/validerAttachementParService"
+      scope="request"
+      type="com.yourcompany.struts.action.ValiderAttachementParServiceAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="validerAttachementParDivisionForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="validerAttachementParDivisionForm"
+      path="/validerAttachementParDivision"
+      scope="request"
+      type="com.yourcompany.struts.action.ValiderAttachementParDivisionAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterCopieAttachementForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="ajouterCopieAttachementForm"
+      path="/ajouterCopieAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterCopieAttachementAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/Execution/ExecutionMarches2.jsp" />
+      <forward name="trueCDT" path="/Contrats/ExecutionBC/ExecutionBC2.jsp" />
+      <forward name="trueBC" path="/BonsDeCommande/ExecutionBC/ExecutionBC2.jsp" />
+    </action>
+    <action
+      attribute="ajouterExamenActeEpourBCForm"
+      input="/BonsDeCommande/EvaluationDesOffresBC/EvaluationDesOffresBC.jsp"
+      name="ajouterExamenActeEpourBCForm"
+      path="/ajouterExamenActeEpourBC"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterExamenActeEpourBCAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterListeAppelOffreForm"
+      input="/AppelsOffres/ListeAppelsOffres.jsp"
+      name="exporterListeAppelOffreForm"
+      path="/exporterListeAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterListeAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action path="/miseAjourStatutAO" type="com.yourcompany.struts.action.MiseAjourStatutAOAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterListeMarchesForm"
+      input="/Marches/LancementMarches/ListeMarches.jsp"
+      name="exporterListeMarchesForm"
+      path="/exporterListeMarches"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterListeMarchesAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterListeDetailAOForm"
+      input="/AppelsOffres/ListeAppelsOffres.jsp"
+      name="exporterListeDetailAOForm"
+      path="/exporterListeDetailAO"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterListeDetailAOAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterRapportAppelOffreForm"
+      input="/Marches/LancementMarches/ListeRechercherMarches.jsp"
+      name="exporterRapportAppelOffreForm"
+      path="/exporterRapportAppelOffre"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterRapportAppelOffreAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterDecompteDefinitifForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="exporterDecompteDefinitifForm"
+      path="/exporterDecompteDefinitif"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterDecompteDefinitifAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherIntervenantsSansSelecionForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="rechercherIntervenantsSansSelecionForm"
+      path="/rechercherIntervenantsSansSelecion"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherIntervenantsSansSelecionAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeIntervenants.jsp" />
+    </action>
+    <action
+      attribute="supprimerIntervenantForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="supprimerIntervenantForm"
+      path="/supprimerIntervenant"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerIntervenantAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterIntervenantForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="ajouterIntervenantForm"
+      path="/ajouterIntervenant"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterIntervenantAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/Marches/DossierMarches/ListeIntervenants.jsp" />
+    </action>
+    <action
+      attribute="modifierIntervenantForm"
+      input="/Marches/DossierMarches/DossierMarches.jsp"
+      name="modifierIntervenantForm"
+      path="/modifierIntervenant"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierIntervenantAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterListeDetailsBCForm"
+      input="/BonsDeCommande/ListeBonsDeCommande.jsp"
+      name="exporterListeDetailsBCForm"
+      path="/exporterListeDetailsBC"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterListeDetailsBCAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      input="/GestionFinanciere/GestionFinanciere.jsp"
+      path="/miseAjourFinanciere"
+      type="com.yourcompany.struts.action.MiseAjourFinanciereAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterOperationFinanciereForm"
+      input="/GestionFinanciere/CompteBancaire.jsp"
+      name="ajouterOperationFinanciereForm"
+      path="/ajouterOperationFinanciere"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterOperationFinanciereAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierOperationFinanciereForm"
+      input="/GestionFinanciere/CompteBancaire.jsp"
+      name="modifierOperationFinanciereForm"
+      path="/modifierOperationFinanciere"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierOperationFinanciereAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="supprimerOperationFinanciereForm"
+      input="/GestionFinanciere/CompteBancaire.jsp"
+      name="supprimerOperationFinanciereForm"
+      path="/supprimerOperationFinanciere"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerOperationFinanciereAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechrcherOperationFinanciereForm"
+      input="/GestionFinanciere/CompteBancaire.jsp"
+      name="rechrcherOperationFinanciereForm"
+      path="/rechrcherOperationFinanciere"
+      scope="request"
+      type="com.yourcompany.struts.action.RechrcherOperationFinanciereAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/GestionFinanciere/ListeOperationVente.jsp" />
+      <forward name="true3" path="/GestionFinanciere/ListeOperationMateriel.jsp" />
+      <forward name="true2" path="/GestionFinanciere/ListeOperationAchat.jsp" />
+    </action>
+    <action
+      attribute="ajouterSousArticleForm"
+      input="/GestionParametres/ParametresSousArticleDepenses.jsp"
+      name="ajouterSousArticleForm"
+      path="/ajouterSousArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterSousArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeSousArticle.jsp" />
+    </action>
+    <action
+      attribute="supprimerSousArticleForm"
+      input="/GestionParametres/ParametresSousArticleDepenses.jsp"
+      name="supprimerSousArticleForm"
+      path="/supprimerSousArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerSousArticleAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierSousArticleForm"
+      input="/GestionParametres/ParametresSousArticleDepenses.jsp"
+      name="modifierSousArticleForm"
+      path="/modifierSousArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierSousArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ParametresSousArticleDepenses.jsp" />
+    </action>
+    <action
+      attribute="rechercherSousArticleForm"
+      input="/GestionParametres/ParametresSousArticleDepenses.jsp"
+      name="rechercherSousArticleForm"
+      path="/rechercherSousArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherSousArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeSousArticle.jsp" />
+      <forward name="true2" path="/GestionParametres/ListeSousArticleVehicule.jsp" />
+    </action>
+    <action
+      attribute="supprimerArticleDepensesForm"
+      input="/GestionParametres/ParametresArticleDepenses.jsp"
+      name="supprimerArticleDepensesForm"
+      path="/supprimerArticleDepenses"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerArticleDepensesAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterArticleDepensesForm"
+      input="/GestionParametres/ParametresArticleDepenses.jsp"
+      name="ajouterArticleDepensesForm"
+      path="/ajouterArticleDepenses"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterArticleDepensesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeArticle.jsp" />
+    </action>
+    <action
+      attribute="rechercherArticleForm"
+      input="/GestionParametres/ParametresArticleDepenses.jsp"
+      name="rechercherArticleForm"
+      path="/rechercherArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeArticle.jsp" />
+    </action>
+    <action
+      attribute="modifierArticleDepensesForm"
+      input="/GestionParametres/ParametresArticleDepenses.jsp"
+      name="modifierArticleDepensesForm"
+      path="/modifierArticleDepenses"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierArticleDepensesAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeArticle.jsp" />
+    </action>
+    <action
+      attribute="getPrixSousArticleForm"
+      input="/GestionRecette/Recettes.jsp"
+      name="getPrixSousArticleForm"
+      path="/getPrixSousArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.GetPrixSousArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionFinanciere/ListePrixSousArticle.jsp" />
+    </action>
+    <action
+      attribute="exporterDepensesEnEspeceForm"
+      input="/GestionDepense/LaCaisse.jsp"
+      name="exporterDepensesEnEspeceForm"
+      path="/exporterDepensesEnEspece"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterDepensesEnEspeceAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action 
+      attribute="getArticleForm"
+      input="/GestionCommerciale.jsp"
+      name="getArticleForm"
+      path="/getArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.GetArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionDepense/ListeArticle.jsp" />
+    </action>
+    <action
+      attribute="getSousArticleForm"
+      input="/GestionDepense/LaCaisse.jsp"
+      name="getSousArticleForm"
+      path="/getSousArticle"
+      scope="request"
+      type="com.yourcompany.struts.action.GetSousArticleAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionDepense/ListeSousArticle.jsp" />
+      <forward name="true2" path="/GestionDepense/ListeSousTraitant.jsp" />
+    </action>
+    <action
+      attribute="modifierStockInitialForm"
+      input="/GestionParametres/ParametresSousArticleRecettes.jsp"
+      name="modifierStockInitialForm"
+      path="/modifierStockInitial"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierStockInitialAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterAttachementForm"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="exporterAttachementForm"
+      path="/exporterAttachement"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterAttachementAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterAttachement2Form"
+      input="/Marches/Execution/ExecutionMarches.jsp"
+      name="exporterAttachement2Form"
+      path="/exporterAttachement2"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterAttachement2Action">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterPersonnelForm"
+      input="/GestionPersonnel/GestionPersonnel.jsp"
+      name="ajouterPersonnelForm"
+      path="/ajouterPersonnel"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterPersonnelAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionPersonnel/ListePersonnel.jsp" />
+    </action>
+    <action
+      attribute="modifierPersonnelForm"
+      input="/form/modifierPersonnel.jsp"
+      name="modifierPersonnelForm"
+      path="/modifierPersonnel"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierPersonnelAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionPersonnel/ListePersonnel.jsp" />
+    </action>
+    <action
+      attribute="supprimerPersonnelForm"
+      input="/form/supprimerPersonnel.jsp"
+      name="supprimerPersonnelForm"
+      path="/supprimerPersonnel"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerPersonnelAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionPersonnel/ListePersonnel.jsp" />
+    </action>
+    <action
+      attribute="rechercherListPersonnelForm"
+      input="/form/rechercherListPersonnel.jsp"
+      name="rechercherListPersonnelForm"
+      path="/rechercherListPersonnel"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherListPersonnelAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/GestionPersonnel/ListePersonnel.jsp" />
+      <forward name="true2" path="/GestionPersonnel/ListePersonnelAnapec.jsp" />
+    </action>
+    <action
+      attribute="rechercherListeBulletinPaieForm"
+      input="/form/rechercherListeBulletinPaie.jsp"
+      name="rechercherListeBulletinPaieForm"
+      path="/rechercherListeBulletinPaie"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherListeBulletinPaieAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionPointageChantier/ListeBulletinPaie.jsp" />
+      <forward name="true2" path="/GestionSalaries/ListeBulletinPaie.jsp" />
+    </action>
+    <action
+      attribute="supprimerBulletinPaieForm"
+      input="/form/supprimerBulletinPaie.jsp"
+      name="supprimerBulletinPaieForm"
+      path="/supprimerBulletinPaie"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerBulletinPaieAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionPointageChantier/ListeBulletinPaie.jsp" />
+    </action>
+    <action
+      attribute="ajouterBulletinPaieForm"
+      input="/form/ajouterBulletinPaie.jsp"
+      name="ajouterBulletinPaieForm"
+      path="/ajouterBulletinPaie"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterBulletinPaieAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionPointageChantier/ListeBulletinPaie.jsp" />
+    </action>
+    <action
+      attribute="ajouterListeBulletinPaieForm"
+      input="/GestionPointageChantier/PointageChantier.jsp"
+      name="ajouterListeBulletinPaieForm"
+      path="/ajouterListeBulletinPaie"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterListeBulletinPaieAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionPointageChantier/ListeBulletinPaie.jsp" />
+    </action>
+    <action
+      attribute="ouvrirSessionPersonnelForm"
+      input="/form/ouvrirSessionPersonnel.jsp"
+      name="ouvrirSessionPersonnelForm"
+      path="/ouvrirSessionPersonnel"
+      scope="request"
+      type="com.yourcompany.struts.action.OuvrirSessionPersonnelAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierBulletinPaieForm"
+      input="/GestionPointageChantier/PointageChantier.jsp"
+      name="modifierBulletinPaieForm"
+      path="/modifierBulletinPaie"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierBulletinPaieAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/GestionPointageChantier/ListeBulletinPaie.jsp" />
+      <forward name="true2" path="/GestionSalaries/ListeBulletinPaie.jsp" />
+    </action>
+    <action
+      attribute="validerBulletinPaieForm"
+      input="/GestionPointageChantier/PointageChantier.jsp"
+      name="validerBulletinPaieForm"
+      path="/validerBulletinPaie"
+      scope="request"
+      type="com.yourcompany.struts.action.ValiderBulletinPaieAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/GestionPointageChantier/ListeBulletinPaie.jsp" />
+      <forward name="true2" path="/GestionPointageChantier/ListeBulletinPaieANAPEC.jsp" />
+    </action>
+    <action
+      attribute="exporterListePersonnelForm"
+      input="/form/exporterListePersonnel.jsp"
+      name="exporterListePersonnelForm"
+      path="/exporterListePersonnel"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterListePersonnelAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="rechercherListPersonnel2Form"
+      input="/GestionPersonnel/GestionPersonnel2.jsp"
+      name="rechercherListPersonnel2Form"
+      path="/rechercherListPersonnel2"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherListPersonnel2Action">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/GestionPersonnel/ListePersonnel2.jsp" />
+      <forward name="true2" path="/GestionPersonnel/ListePersonnelAnapec2.jsp" />
+    </action>
+    <action
+      attribute="modifierDateReglementListeBulletinForm"
+      input="/GestionBulletinPaie/GestionBulletinPaie.jsp"
+      name="modifierDateReglementListeBulletinForm"
+      path="/modifierDateReglementListeBulletin"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierDateReglementListeBulletinAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true1" path="/GestionBulletinPaie/ListeBulletinPaie.jsp" />
+      <forward name="true2" path="/GestionBulletinPaie/ListeBulletinPaieANAPEC.jsp" />
+    </action>
+     <action
+      attribute="rechercherDocumentPieceJointeForm"
+      input="/Marches/LancementMarches/ListeMarches.jsp"
+      name="rechercherDocumentPieceJointeForm"
+      path="/rechercherDocumentPieceJointe"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherDocumentPieceJointeAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/PieceJointe/ListeDocumentsCourrier.jsp" />
+    </action>
+    <action
+      attribute="ajouterDocumentPieceJointeForm"
+      input="/Marches/LancementMarches/ListeMarches.jsp"
+      name="ajouterDocumentPieceJointeForm"
+      path="/ajouterDocumentPieceJointe"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterDocumentPieceJointeAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/PieceJointe/ListeDocumentsCourrier.jsp" />
+    </action>
+    <action
+      attribute="supprimerDocumentPieceJointeForm"
+      input="/Marches/LancementMarches/ListeMarches.jsp"
+      name="supprimerDocumentPieceJointeForm"
+      path="/supprimerDocumentPieceJointe"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerDocumentPieceJointeAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="exporterJournalPaieForm"
+      input="/GestionPointageChantier/PointageChantier.jsp"
+      name="exporterJournalPaieForm"
+      path="/exporterJournalPaie"
+      scope="request"
+      type="com.yourcompany.struts.action.ExporterJournalPaieAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="modifierStatutMaterielForm"
+      input="/GestionMateriels/GestionMateriels.jsp"
+      name="modifierStatutMaterielForm"
+      path="/modifierStatutMateriel"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierStatutMaterielAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionFinanciere/ListeOperationMateriel.jsp" />
+    </action>
+    <action
+      attribute="rechercherFournisseurForm"
+      input="/GestionParametres/ParametresFournisseur.jsp"
+      name="rechercherFournisseurForm"
+      path="/rechercherFournisseur"
+      scope="request"
+      type="com.yourcompany.struts.action.RechercherFournisseurAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeFournisseur.jsp" />
+    </action>
+    <action
+      attribute="supprimerFournisseurForm"
+      input="/GestionParametres/ParametresFournisseur.jsp"
+      name="supprimerFournisseurForm"
+      path="/supprimerFournisseur"
+      scope="request"
+      type="com.yourcompany.struts.action.SupprimerFournisseurAction">
+      <set-property property="cancellable" value="true" />
+    </action>
+    <action
+      attribute="ajouterFournisseurForm"
+      input="/GestionParametres/ParametresFournisseur.jsp"
+      name="ajouterFournisseurForm"
+      path="/ajouterFournisseur"
+      scope="request"
+      type="com.yourcompany.struts.action.AjouterFournisseurAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeFournisseur.jsp" />
+    </action>
+    <action
+      attribute="modifierFournisseurForm"
+      input="/GestionParametres/ParametresFournisseur.jsp"
+      name="modifierFournisseurForm"
+      path="/modifierFournisseur"
+      scope="request"
+      type="com.yourcompany.struts.action.ModifierFournisseurAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionParametres/ListeFournisseur.jsp" />
+    </action>
+    <action path="/getFournisseur" type="com.yourcompany.struts.action.GetFournisseurAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="true" path="/GestionDepense/ListeFournisseur.jsp" />
+    </action>
+  </action-mappings>
+
+  <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+

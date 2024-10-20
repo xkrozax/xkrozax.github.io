@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="671f4743-8ba5-4fc4-948f-e03e8b01e43a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="625"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="78cb7854-f68a-45af-9575-7ed9b0d455fe"/>
+	<parameter name="numAppelOffre" class="java.lang.String"/>
+	<parameter name="anneeAppelOffre" class="java.lang.Integer"/>
+	<parameter name="objetAppelOffre" class="java.lang.String"/>
+	<parameter name="dateOp" class="java.lang.String"/>
+	<parameter name="heureOp" class="java.lang.Integer"/>
+	<parameter name="minuteOp" class="java.lang.Integer"/>
+	<parameter name="lieuOp" class="java.lang.String"/>
+	<parameter name="numSeance1" class="java.lang.Integer"/>
+	<parameter name="numSeance2" class="java.lang.Integer"/>
+	<parameter name="numSeance3" class="java.lang.Integer"/>
+	<parameter name="numSeance4" class="java.lang.Integer"/>
+	<parameter name="numSeance5" class="java.lang.Integer"/>
+	<parameter name="numSeance6" class="java.lang.Integer"/>
+	<parameter name="numSeance7" class="java.lang.Integer"/>
+	<parameter name="numSeance8" class="java.lang.Integer"/>
+	<parameter name="numSeance9" class="java.lang.Integer"/>
+	<parameter name="numSeance10" class="java.lang.Integer"/>
+	<parameter name="dateSeance1" class="java.lang.String"/>
+	<parameter name="dateSeance2" class="java.lang.String"/>
+	<parameter name="dateSeance3" class="java.lang.String"/>
+	<parameter name="dateSeance4" class="java.lang.String"/>
+	<parameter name="dateSeance5" class="java.lang.String"/>
+	<parameter name="dateSeance6" class="java.lang.String"/>
+	<parameter name="dateSeance7" class="java.lang.String"/>
+	<parameter name="dateSeance8" class="java.lang.String"/>
+	<parameter name="dateSeance9" class="java.lang.String"/>
+	<parameter name="dateSeance10" class="java.lang.String"/>
+	<parameter name="numSeance" class="java.lang.Integer"/>
+	<parameter name="OffreAvantageuse" class="java.lang.String"/>
+	<parameter name="membre1SousCommssion" class="java.lang.String"/>
+	<parameter name="membre2SousCommssion" class="java.lang.String"/>
+	<parameter name="membre3SousCommssion" class="java.lang.String"/>
+	<parameter name="membre4SousCommssion" class="java.lang.String"/>
+	<parameter name="membre5SousCommssion" class="java.lang.String"/>
+	<parameter name="membre6SousCommssion" class="java.lang.String"/>
+	<parameter name="membre7SousCommssion" class="java.lang.String"/>
+	<parameter name="membre8SousCommssion" class="java.lang.String"/>
+	<parameter name="membre9SousCommssion" class="java.lang.String"/>
+	<parameter name="membre10SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre1SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre2SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre3SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre4SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre5SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre6SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre7SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre8SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre9SousCommssion" class="java.lang.String"/>
+	<parameter name="roleMembre10SousCommssion" class="java.lang.String"/>
+	<parameter name="nomJournal1" class="java.lang.String"/>
+	<parameter name="nomJournal2" class="java.lang.String"/>
+	<parameter name="nomJournal3" class="java.lang.String"/>
+	<parameter name="nomJournal4" class="java.lang.String"/>
+	<parameter name="nomJournal5" class="java.lang.String"/>
+	<parameter name="nomJournal6" class="java.lang.String"/>
+	<parameter name="numAvis1" class="java.lang.String"/>
+	<parameter name="numAvis2" class="java.lang.String"/>
+	<parameter name="numAvis3" class="java.lang.String"/>
+	<parameter name="numAvis4" class="java.lang.String"/>
+	<parameter name="numAvis5" class="java.lang.String"/>
+	<parameter name="numAvis6" class="java.lang.String"/>
+	<parameter name="dateAvis1" class="java.lang.String"/>
+	<parameter name="dateAvis2" class="java.lang.String"/>
+	<parameter name="dateAvis3" class="java.lang.String"/>
+	<parameter name="dateAvis4" class="java.lang.String"/>
+	<parameter name="dateAvis5" class="java.lang.String"/>
+	<parameter name="dateAvis6" class="java.lang.String"/>
+	<parameter name="paragraphe1" class="java.lang.String"/>
+	<parameter name="paragraphe2" class="java.lang.String"/>
+	<parameter name="paragraphe3" class="java.lang.String"/>
+	<parameter name="typeAoExtraitPV" class="java.lang.String"/>
+	<parameter name="concurrentRetenu" class="java.lang.String"/>
+	<parameter name="montantOffreRetenue" class="java.lang.String"/>
+	<parameter name="justificationChoixAttributaire1" class="java.lang.String"/>
+	<parameter name="justificationChoixAttributaire2" class="java.lang.String"/>
+	<parameter name="dateAchevementTc" class="java.lang.String"/>
+	<parameter name="phraseListeConcurrentsDAT" class="java.lang.String"/>
+	<parameter name="phraseListeEchantillons1" class="java.lang.String"/>
+	<parameter name="phraseListeEchantillons2" class="java.lang.String"/>
+	<field name="nomConcurrent" class="java.lang.String"/>
+	<field name="ville" class="java.lang.String"/>
+	<field name="adresse" class="java.lang.String"/>
+	<field name="ecarterDat" class="java.lang.Integer"/>
+	<field name="motifsDat" class="java.lang.String"/>
+	<field name="admisReserve" class="java.lang.Integer"/>
+	<field name="ecarterOffreT" class="java.lang.Integer"/>
+	<field name="motifsOffreT" class="java.lang.String"/>
+	<field name="ecarterOffreF" class="java.lang.Integer"/>
+	<field name="motifsOffreF" class="java.lang.String"/>
+	<field name="offreAvantageuse" class="java.lang.Integer"/>
+	<field name="numOrdre" class="java.lang.Integer"/>
+	<field name="numListe" class="java.lang.Integer"/>
+	<field name="motifsAdmisReserve" class="java.lang.String"/>
+	<field name="motifsE" class="java.lang.String"/>
+	<field name="montantActeEngagement" class="java.lang.String"/>
+	<field name="motifsActeE" class="java.lang.String"/>
+	<field name="montantActeEngagement2" class="java.lang.String"/>
+	<field name="numParagraphe" class="java.lang.Integer"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="428">
+			<staticText>
+				<reportElement x="0" y="0" width="165" height="97" uuid="468582d4-fd28-41c8-bc5d-28734c0c2821"/>
+				<textElement>
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Royaume du Maroc
+Ministère de l'intérieur
+Prefecture d'Inezgane Ait Melloul Commune Dcheira El Jihadia
+Direction des services
+Division d'équipement
+Service Marche]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="235" y="119" width="111" height="20" forecolor="#006600" uuid="104a9cf0-8fc2-4d3c-9309-cd4fca673b93"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numAppelOffre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="191" width="81" height="20" uuid="c7309b67-8d33-4c03-9004-1822d98cd6e9"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Maitre ouvrage :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="191" width="474" height="20" uuid="0c8aa55c-1d88-4df2-8d92-c8f1e0638c1c"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Commune de Dcheira El jihadia]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="161" width="505" height="30" uuid="fddc16b6-f9fa-4072-8bb9-ad0b4b503398"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objetAppelOffre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="161" width="50" height="20" uuid="17fd6114-535e-40fa-a594-d3a718f036e1"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Relatif à :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="328" width="555" height="16" isRemoveLineWhenBlank="true" uuid="bc3cc840-206b-4aaf-9490-130c60b96706"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="344" width="555" height="16" isRemoveLineWhenBlank="true" uuid="119a60ef-c09b-4845-b802-df58d08c4a37"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="360" width="555" height="16" isRemoveLineWhenBlank="true" uuid="799c99ef-8474-4236-8d9f-dfa0a7a7839e"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="231" width="33" height="20" uuid="c38d286f-e9f3-494b-9d5c-7db43de8c86a">
+					<printWhenExpression><![CDATA[$P{numSeance1} != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numSeance1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="138" y="231" width="64" height="20" uuid="03994083-0672-4fef-90e1-f3f6727ff74d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Séance N° :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="231" width="138" height="20" uuid="94f2736f-0903-455f-8d4c-334424cf6c5b"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Date d'ouverture des plis :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="211" width="138" height="20" uuid="1ed92cf9-0357-44f9-8eeb-780b623c0b52"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Lieu d'ouverture des plis :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="138" y="211" width="417" height="20" uuid="2587303c-96c7-4bd2-b7f6-83a5a29e00ce"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lieuOp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="231" width="136" height="20" uuid="3df6b292-17d7-4e8d-ac40-0cca0acc4431"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateSeance1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="251" width="136" height="20" uuid="5362a73c-c5fe-4f58-b1fe-5d392a52f48d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateSeance2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="251" width="33" height="20" uuid="6f1ef53c-505b-4778-bb1d-5c498c23e15d">
+					<printWhenExpression><![CDATA[$P{numSeance2} != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numSeance2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="138" y="251" width="64" height="20" uuid="c482326c-244a-40d7-8688-fccf0e978ea4"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Séance N° :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="271" width="136" height="20" uuid="995a42d1-9ae6-4f2d-a117-bdd813df4692"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateSeance3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="271" width="33" height="20" uuid="0c1ff252-40f1-4ec4-8744-30cf9012b644">
+					<printWhenExpression><![CDATA[$P{numSeance3} != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numSeance3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="138" y="271" width="64" height="20" uuid="50ca7da5-513e-4f9b-8d3b-78f506934353"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Séance N° :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="260" y="291" width="136" height="20" uuid="1638efa1-6c1d-4edf-970c-3eae5c0b7d2d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateSeance4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="291" width="33" height="20" uuid="df17973a-1630-4faf-a824-da42f8852a1e">
+					<printWhenExpression><![CDATA[$P{numSeance4} != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numSeance4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="138" y="291" width="64" height="20" uuid="08db9fda-828c-4dcf-9ddd-5ed9df52e1bb"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Séance N° :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="311" width="555" height="16" uuid="b13b50d7-2de5-4d85-9893-987cd73749ba"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Journaux et portail ayant publié l'avis de publicité :]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="118" y="97" width="354" height="22" forecolor="#006600" backcolor="#CCCCCC" uuid="f0aedcb4-e5d7-4517-8b9f-d1675e6616eb"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{typeAoExtraitPV}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="472" y="0" width="83" height="97" uuid="d85e09cf-1c5f-4d2f-b26a-f8f1429abe7b"/>
+				<imageExpression><![CDATA["C:\\Users\\safouane\\Workspaces\\MyEclipse 10\\MarchesPublics\\WebRoot\\images\\Logo.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="376" width="555" height="16" isRemoveLineWhenBlank="true" uuid="25cc7e1f-6877-4c7d-a6b8-20935fd6884e"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="392" width="555" height="16" isRemoveLineWhenBlank="true" uuid="a147428d-c87c-4dbb-8755-d205083d600d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="408" width="555" height="16" isRemoveLineWhenBlank="true" uuid="9ce78fc4-a683-4c6f-b51c-1decf93e79c5"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nomJournal6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="235" y="231" width="25" height="20" uuid="bdbb0bc8-98ae-4502-80ee-0c99b583474a"/>
+				<text><![CDATA[Le :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="251" width="25" height="20" uuid="bdf079b1-731d-49a8-8e94-048b8e8d3dd4"/>
+				<text><![CDATA[Le :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="271" width="25" height="20" uuid="5f7df460-922e-476b-85d0-58f867d4dbfa"/>
+				<text><![CDATA[Le :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="291" width="25" height="20" uuid="1134f6bd-0576-4584-b0ce-3e0adc396dd2"/>
+				<text><![CDATA[Le :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 1]]></printWhenExpression>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numListe} == 1]]></printWhenExpression>
+		</band>
+		<band height="1" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 2]]></printWhenExpression>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numListe} == 2]]></printWhenExpression>
+		</band>
+		<band height="1" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 3]]></printWhenExpression>
+		</band>
+		<band>
+			<printWhenExpression><![CDATA[$F{numListe} == 3]]></printWhenExpression>
+		</band>
+		<band height="17" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 4]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="525" height="16" uuid="4bdaf093-000d-4361-92dc-dc061793029c"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Liste des concurrents ayant déposés un pli:
+
+]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 4]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="10" y="0" width="545" height="16" uuid="f9c1c5c0-10e3-4fdc-a25d-ab31a096bf53"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="44">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 5]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="27" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="65eaa88d-eb85-4045-bc30-828982b98e89"/>
+				<staticText>
+					<reportElement x="0" y="0" width="165" height="17" uuid="5586e1c0-6b40-40d9-adba-ab87e26a9dfd"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents éliminés]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="165" y="0" width="390" height="17" uuid="e9d6179d-4f5c-4232-be9e-c3a5c5c1b218"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Motifs des éliminations]]></text>
+				</staticText>
+			</frame>
+			<textField>
+				<reportElement x="0" y="7" width="555" height="20" uuid="0d547ea4-17bb-49a4-a8b7-55c2169958cb"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{phraseListeConcurrentsDAT}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 5]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="f2ed833a-29ae-426e-87a6-8efabeeffb34"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="165" height="16" uuid="da06a098-d2ed-4d8a-873a-675480ab20d3"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="165" y="0" width="390" height="16" uuid="621c217c-7a2d-498a-a773-4322964e508e"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{motifsDat}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="29">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 6]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="11" width="555" height="18" uuid="1ab6bef2-7a3b-410d-932b-305d16269d5e"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Liste des concurrents admissibles sans réserves :]]></text>
+			</staticText>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 6]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="10" y="0" width="545" height="16" uuid="8b49dfda-7885-442b-bfb3-a46925a874f1"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="35">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 7]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="18" uuid="56f7a208-9137-4aeb-8720-e675d2489dc3"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Liste des concurrents admissibles avec réserves :]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="18" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="d1664cff-f33e-4058-b6bc-55810df3eac2"/>
+				<staticText>
+					<reportElement x="0" y="0" width="165" height="17" uuid="a600e9e7-b9bd-47eb-8e79-8e99a67aa82b"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="165" y="0" width="390" height="17" uuid="7dd7bfb6-9edd-48e6-b5fd-5c1141a73033"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Objet de la réserve]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 7]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="996704ba-581a-4cb0-a848-a3aa288d92c4"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="165" height="16" uuid="3df35cf0-5f14-40cc-8e4a-c55de77bc685"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="165" y="0" width="390" height="16" uuid="0427d30c-385a-4676-9821-17be17522d73"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{motifsAdmisReserve}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 8]]></printWhenExpression>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numListe} == 8]]></printWhenExpression>
+		</band>
+		<band height="26">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 9]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="6" width="555" height="20" uuid="c50efe8b-8051-4651-8a51-635e168e06ae"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{phraseListeEchantillons1}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{numListe} == 9]]></printWhenExpression>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="10" y="0" width="545" height="16" uuid="b7d73b65-0e48-4d6d-8784-c0ed5b600ef0"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 10]]></printWhenExpression>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numListe} == 10]]></printWhenExpression>
+		</band>
+		<band height="40">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 11]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="23" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="95d65c2f-6740-468a-a0d7-227c225704df"/>
+				<staticText>
+					<reportElement x="0" y="0" width="165" height="17" uuid="abe4b79f-0500-43f5-9430-16779af7b972"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents éliminés]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="165" y="0" width="390" height="17" uuid="6dc68f05-396d-4b79-b09a-976118af155a"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Motifs des éliminations]]></text>
+				</staticText>
+			</frame>
+			<textField>
+				<reportElement x="0" y="3" width="555" height="20" uuid="e9006aec-b2fa-4027-b70c-9bbf7cc6b27a"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{phraseListeEchantillons2}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 11]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="04309ca0-958b-4b9f-8832-570722bd09cf"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="165" height="16" uuid="53429294-8690-4533-9f28-73fcfed339ae"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="165" y="0" width="390" height="16" uuid="e912852c-8048-42c9-aa28-20d293038554"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{motifsE}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="38">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 12]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="5" width="555" height="16" uuid="0501e7fb-f825-4294-9a0f-88b867a85744"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Montants des actes d’engagement des soumissionnaires retenus :]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="21" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="9fb662d7-cc61-43b5-8b85-7cdc2adb6cd2"/>
+				<staticText>
+					<reportElement x="0" y="0" width="206" height="17" uuid="5ed6bfb9-1d97-4fcc-8be3-c392481a0d2e"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="206" y="0" width="349" height="17" uuid="da7d5034-6459-4599-af0c-db91df0f62ac"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montants des actes d’engagement]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 12]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="22e94632-8f0b-4651-b65a-1ddf6cd93b4c"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="206" height="16" uuid="3d3b5820-1e85-4322-a606-fe53ce915811"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="206" y="0" width="160" height="16" uuid="90a14559-0c08-4d2d-aa06-2d230825075b"/>
+					<textElement textAlignment="Right"/>
+					<textFieldExpression><![CDATA[$F{montantActeEngagement}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="39">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 13]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="5" width="555" height="17" uuid="2e3120fd-3091-4620-b64b-be9d4ab259ff"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Liste des soumissionnaires écartés :]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="22" width="555" height="17" forecolor="#CCCCCC" backcolor="#999999" uuid="27e8fc23-0bad-4d96-bbde-b91b137625f7"/>
+				<staticText>
+					<reportElement x="0" y="0" width="165" height="17" uuid="10e7aeeb-ca7c-4d50-abf9-41832b425b69"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents éliminés]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="165" y="0" width="390" height="17" uuid="821f4774-0fd2-40c7-9a66-39fae73df852"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Motifs des éliminations]]></text>
+				</staticText>
+			</frame>
+		</band>
+		<band height="17">
+			<printWhenExpression><![CDATA[$F{numListe} == 13]]></printWhenExpression>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="555" height="16" backcolor="#BFDDFA" uuid="8b081bb7-b861-4d24-b619-fcb20c8c7275"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="165" height="16" uuid="d15b0d09-1314-45a9-9f58-2a880548f648"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nomConcurrent}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="165" y="0" width="390" height="16" uuid="49194fe5-30ee-4b9b-a0c6-ccd945f5117c"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{motifsActeE}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 14]]></printWhenExpression>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numListe} == 14]]></printWhenExpression>
+		</band>
+		<band height="49">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 15]]></printWhenExpression>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="17" uuid="80f82edf-5ec4-415e-9ef8-ee504a60cdfb"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Soumissionnaire retenu :]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="17" width="555" height="16" forecolor="#CCCCCC" backcolor="#999999" uuid="3b4f6fd4-e905-4f87-abdd-dfd56f707a00"/>
+				<staticText>
+					<reportElement x="0" y="0" width="206" height="15" uuid="3415d21a-2308-4e68-8a4d-7443bc16fbe1"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Concurrents]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="206" y="0" width="349" height="15" uuid="611d16d5-e03d-4b5b-a1d0-6ae3891c170e"/>
+					<textElement>
+						<font fontName="CG Omega" size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Montant des actes d'engagements]]></text>
+				</staticText>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="33" width="555" height="16" backcolor="#BFDDFA" uuid="b6b561fb-f877-4ae8-9aca-3131893c4c14"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="0" y="0" width="206" height="16" uuid="3a2d9b8b-88b7-4535-bfca-46f943441656"/>
+					<textElement>
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{concurrentRetenu}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement x="206" y="0" width="160" height="16" uuid="77bf0cd2-54e1-487b-ac2a-b85e80d9ad77"/>
+					<textElement textAlignment="Right">
+						<font fontName="CG Omega" size="11"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{montantOffreRetenue}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="1">
+			<printWhenExpression><![CDATA[$F{numListe} == 15]]></printWhenExpression>
+		</band>
+		<band height="175">
+			<printWhenExpression><![CDATA[$F{numOrdre} == 16]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="27" width="555" height="17" uuid="2ef0edb5-208c-4fa8-9a95-6c1a65a00e7d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{justificationChoixAttributaire1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="44" width="555" height="20" uuid="d642d14b-f2b5-4df7-a96b-7cf43d3f916a"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{justificationChoixAttributaire2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="70" width="239" height="20" uuid="f73f2819-936f-42c7-a28f-ef1868135b3c"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateAchevementTc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="10" width="335" height="17" uuid="e51ec409-9af9-4a43-82c2-d009074ccc1f"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Justification du choix de l'attributaire :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="316" height="20" uuid="38ea1fd9-05c3-48a6-bccc-2ffecaafe2ec"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[- Date d'achèvement des travaux de la commission (ou du jury) :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="145" width="190" height="27" uuid="a02dcaf5-632d-4e98-aaf0-27b15b6c1ff3"/>
+				<textElement>
+					<font fontName="CG Omega" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Singé Le président de la C.D. J]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="125" width="163" height="20" uuid="804b5759-8c5a-464d-a4bf-2ff6c4bf279d"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Fait à Dcheira El Jihadia le :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement x="223" y="0" width="93" height="17" uuid="6b02af35-728a-4704-8c74-57a8886c602d"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numAppelOffre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

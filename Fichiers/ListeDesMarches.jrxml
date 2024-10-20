@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AvisImpositionTNB" language="groovy" pageWidth="1684" pageHeight="1190" orientation="Landscape" columnWidth="1572" leftMargin="56" rightMargin="56" topMargin="27" bottomMargin="27" uuid="5d4b8f20-d788-40b3-bf79-0a302a51a007">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="2"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="2c90f51a-5e16-4572-b2be-cf5180603ee4">
+		<field name="numAppelOffre" class="java.lang.String"/>
+		<field name="objetAppelOffre" class="java.lang.String"/>
+		<field name="objetAppelOffre2" class="java.lang.String"/>
+		<field name="dateOp" class="java.lang.String"/>
+		<field name="lieuOp" class="java.lang.String"/>
+		<field name="montantEstimation" class="java.lang.String"/>
+		<field name="montantMarche" class="java.lang.String"/>
+		<field name="concurrentRetenu" class="java.lang.String"/>
+		<field name="numMarches" class="java.lang.String"/>
+		<field name="dateVisa" class="java.lang.String"/>
+		<field name="dateApprobation" class="java.lang.String"/>
+		<field name="dateNotificationApprobation" class="java.lang.String"/>
+		<field name="dateOrdreService" class="java.lang.String"/>
+		<field name="budgetFinancement" class="java.lang.String"/>
+		<field name="imputationBudgetaire" class="java.lang.String"/>
+		<field name="justificationChoixAttributaire" class="java.lang.String"/>
+		<field name="delaisExecution" class="java.lang.String"/>
+		<field name="montantCautionP" class="java.lang.String"/>
+		<field name="montantCautionD" class="java.lang.String"/>
+		<field name="dateReceptionProvsoire" class="java.lang.String"/>
+		<field name="dateReceptionDefinitive" class="java.lang.String"/>
+		<field name="statutActuel" class="java.lang.String"/>
+		<field name="lieuExecution" class="java.lang.String"/>
+		<field name="montantMarches" class="java.lang.String"/>
+		<field name="montantRealise" class="java.lang.String"/>
+		<field name="montantDepenses" class="java.lang.String"/>
+		<field name="montantDepensesPersonnels" class="java.lang.String"/>
+		<field name="montantBeneficeMarches" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="listeAppelsoffres" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="anneeMarches" class="java.lang.String" isForPrompting="false"/>
+	<title>
+		<band height="160" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="699" y="54" width="253" height="40" uuid="de9b546f-2f07-462e-b09e-a0cadd58fd00"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Liste des Marchés]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="574" y="94" width="483" height="20" uuid="765afeb1-8b42-4225-be5b-5085bd75f98c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{anneeMarches}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="1" width="1572" height="1" uuid="3dde62f3-9db3-4ecc-87cd-c3dd6e6464fb"/>
+			</line>
+			<componentElement>
+				<reportElement key="table 2" style="table 2" positionType="Float" x="0" y="33" width="1572" height="50" uuid="d4601243-6c7a-4336-ad95-ee16b20527af"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Table Dataset 1" uuid="adc15f29-13ce-4f98-bdd2-43a62c20db9c">
+						<datasetParameter name="REPORT_DATA_SOURCE">
+							<datasetParameterExpression><![CDATA[$P{listeAppelsoffres}]]></datasetParameterExpression>
+						</datasetParameter>
+					</datasetRun>
+					<jr:column width="90" uuid="a5ac7e47-8f5e-48d8-8281-e389bfc8acc9">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement positionType="Float" x="11" y="5" width="68" height="30" uuid="678a5f50-75e6-47fa-aca2-0d6bf94cf982"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[N° du marché]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="11" y="5" width="79" height="20" uuid="81db5c47-642a-460e-9b2c-658dec6fce10"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{numMarches}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="81" uuid="76fcd852-cb19-4900-ae72-7e7b8a0cdd73">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="81" height="30" uuid="081b378c-3ee3-49fe-8d34-769307677e7b"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Réference d'appel d'offre]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="5" width="81" height="20" uuid="1b1a66fa-419e-4c87-9cb1-e3830110bad8"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{numAppelOffre}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="278" uuid="b5d07e5b-75c4-4453-9377-158597fd8193">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="5" width="252" height="30" uuid="ed5b1150-6a1b-4212-8ec2-0e14cdd36b36"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Objet du Marché]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="272" height="20" uuid="1fe542b4-6bd5-4d5c-b0be-111baeeadcee"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{objetAppelOffre}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="76" uuid="a4b63ae2-768c-4b41-9ed0-233150354683">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="5" width="71" height="30" uuid="e2d8e758-2d0f-41a3-9af3-506bbc8b248c"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date ouverture des plis]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="71" height="20" uuid="4feb5422-67f1-43f6-a107-a750e1561c1d"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateOp}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="67" uuid="ef50c3bc-1283-48b1-82a0-0d053a5bba6f">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="5" y="5" width="50" height="30" uuid="349b0080-acbd-465f-b7dc-298ef955df3d"/>
+								<textElement>
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Statut du marché]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="5" width="67" height="20" uuid="edc5832f-3bd3-43c5-825d-ef1c0d4cbd19">
+									<printWhenExpression><![CDATA[$F{montantEstimation} != "0.00"]]></printWhenExpression>
+								</reportElement>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{statutActuel}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="74" uuid="8dcd4b96-6475-46c7-b97e-3146bb12e098">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="74" height="30" uuid="7b365555-15ea-4e4d-ad40-3b877ccfed75"/>
+								<textElement textAlignment="Center">
+									<font fontName="SansSerif" size="10" isBold="true"/>
+								</textElement>
+								<text><![CDATA[Montant Marché TTC]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="5" width="70" height="20" uuid="0af99b2f-90c7-4d45-83aa-a175d47a23c2"/>
+								<textElement textAlignment="Right">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{montantMarches}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="74" uuid="7c0cda6b-fe4a-4c1d-a7ab-7137874be90b">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="65" height="30" uuid="540ecad8-af21-4499-a793-8c8684ba8cb6"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Montant Réalisé  HT]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="5" width="70" height="20" uuid="3a67e352-1949-4e41-85ac-39d0da567fcb"/>
+								<textElement textAlignment="Right">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{montantRealise}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="73" uuid="2202a16b-0c37-4f51-b16a-f95e29abd2f1">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="73" height="30" uuid="74d41e24-9ef3-4c06-9c41-8cd94dfa4475"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Dépenses Divers]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="5" width="68" height="20" uuid="24a1b17b-ffe4-4fa2-8f5b-daf759873cc8"/>
+								<textElement textAlignment="Right">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{montantDepenses}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="73" uuid="34368ec5-f576-4cfb-9b77-c7a87ec74224">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="73" height="30" uuid="58ddf817-c60b-4ae2-8a8c-b82bab840b25"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Charges Personnels]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="5" width="68" height="20" uuid="d0d8e095-5932-4ea6-8235-76a4d51aa58f"/>
+								<textElement textAlignment="Right">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{montantDepensesPersonnels}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="76" uuid="e50bac65-32cd-4398-ad9f-00eac99c1d4c">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="76" height="30" uuid="a593c15f-e34e-4b50-a420-27409aea9daf"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Bénéfice du Marché]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="0" y="5" width="70" height="20" uuid="fb93ea52-5488-4662-96d8-fc822fcd444e"/>
+								<textElement textAlignment="Right">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{montantBeneficeMarches}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="72" uuid="c361ae12-5efe-41e1-9704-66f9dfa6c7c8">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="72" height="30" uuid="83a524cf-5073-450d-874b-bedce61c4448"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date Approbation]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="64" height="20" uuid="7c83a57d-43d7-4cd4-ba47-a2c10c1a011e"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateApprobation}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="68" uuid="3bcafe84-6a5c-4ebc-9649-0985b0888762">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="68" height="30" uuid="571aa0b1-7514-48a8-b30c-858c3f54a351"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Notification Approbation]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="63" height="20" uuid="9f9cc1ad-60fd-4cb1-aa0b-ac664489438c"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateNotificationApprobation}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="91" uuid="fb8a2b19-1723-4c77-ab5f-d8967dd46dbb">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="91" height="30" uuid="0d4253e2-f667-4fa2-ae6c-9aaa6e63f743"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Date de Commencement]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="3" y="5" width="71" height="20" uuid="c5c3d538-1e4f-493a-870c-22aa2aed229d"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateOrdreService}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="62" uuid="aaffbba6-d4fc-4438-b436-09eafc267f7d">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="62" height="30" uuid="147c47a9-bad5-41cc-aaf8-4491e9cae55a"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Réception Provisoire]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="53" height="20" uuid="f5f6e4e8-aeb5-4b6b-8246-e708412245b8"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateReceptionProvsoire}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="60" uuid="64718af9-61bb-4d32-806a-372d3f9fe072">
+						<jr:columnHeader style="table 2_CH" height="41" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="5" width="60" height="30" uuid="c5b6b382-da74-4127-ac7d-b0f33380e9f7"/>
+								<textElement textAlignment="Center">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Réception Définitive]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="table 2_TD" height="30" rowSpan="1">
+							<textField isStretchWithOverflow="true">
+								<reportElement positionType="Float" x="5" y="5" width="53" height="20" uuid="015dfbff-b5dc-4360-a844-33dff753b0c5"/>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dateReceptionDefinitive}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

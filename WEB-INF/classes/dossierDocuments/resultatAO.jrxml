@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="671f4743-8ba5-4fc4-948f-e03e8b01e43a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="303"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#73B0E6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#CFDBE6">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="numAppelOffre" class="java.lang.String"/>
+	<parameter name="anneeAppelOffre" class="java.lang.Integer"/>
+	<parameter name="objetAppelOffre" class="java.lang.String"/>
+	<parameter name="dateOp" class="java.lang.String"/>
+	<parameter name="heureOp" class="java.lang.Integer"/>
+	<parameter name="minuteOp" class="java.lang.Integer"/>
+	<parameter name="typeLot" class="java.lang.String"/>
+	<parameter name="concurrentRetenu" class="java.lang.String"/>
+	<parameter name="montantOffreRetenue" class="java.lang.String"/>
+	<parameter name="dateAchevementTc" class="java.lang.String"/>
+	<parameter name="typeAoResultatAO" class="java.lang.String"/>
+	<parameter name="numAppelOffre2" class="java.lang.String"/>
+	<field name="nomConcurrent" class="java.lang.String"/>
+	<field name="ville" class="java.lang.String"/>
+	<field name="adresse" class="java.lang.String"/>
+	<field name="ecarterDat" class="java.lang.Integer"/>
+	<field name="motifsDat" class="java.lang.String"/>
+	<field name="admisReserve" class="java.lang.Integer"/>
+	<field name="ecarterOffreT" class="java.lang.Integer"/>
+	<field name="motifsOffreT" class="java.lang.String"/>
+	<field name="ecarterOffreF" class="java.lang.Integer"/>
+	<field name="motifsOffreF" class="java.lang.String"/>
+	<field name="offreAvantageuse" class="java.lang.Integer"/>
+	<field name="numOrdre" class="java.lang.Integer"/>
+	<field name="numListe" class="java.lang.Integer"/>
+	<field name="motifsAdmisReserve" class="java.lang.String"/>
+	<field name="motifsE" class="java.lang.String"/>
+	<field name="montantActeEngagement" class="java.lang.String"/>
+	<field name="motifsActeE" class="java.lang.String"/>
+	<field name="montantActeEngagement2" class="java.lang.String"/>
+	<field name="numParagraphe" class="java.lang.Integer"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="590">
+			<staticText>
+				<reportElement x="0" y="0" width="165" height="97" uuid="468582d4-fd28-41c8-bc5d-28734c0c2821"/>
+				<textElement>
+					<font fontName="Calibri" size="11"/>
+				</textElement>
+				<text><![CDATA[Royaume du Maroc
+Ministère de l'intérieur
+Prefecture d'Inezgane Ait Melloul Commune Dcheira El Jihadia
+Direction des services
+Division d'équipement
+Service Marche]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="235" y="119" width="111" height="20" forecolor="#006600" uuid="104a9cf0-8fc2-4d3c-9309-cd4fca673b93"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numAppelOffre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="191" width="81" height="20" uuid="c7309b67-8d33-4c03-9004-1822d98cd6e9"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Maitre ouvrage :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="191" width="474" height="20" uuid="0c8aa55c-1d88-4df2-8d92-c8f1e0638c1c"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Commune de Dcheira El jihadia]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="161" width="505" height="30" uuid="fddc16b6-f9fa-4072-8bb9-ad0b4b503398"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objetAppelOffre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="161" width="50" height="20" uuid="17fd6114-535e-40fa-a594-d3a718f036e1"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Relatif à :]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="118" y="97" width="354" height="22" forecolor="#006600" backcolor="#CCCCCC" uuid="f0aedcb4-e5d7-4517-8b9f-d1675e6616eb"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{typeAoResultatAO}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="472" y="0" width="83" height="97" uuid="d85e09cf-1c5f-4d2f-b26a-f8f1429abe7b"/>
+				<imageExpression><![CDATA["C:\\Users\\safouane\\Workspaces\\MyEclipse 10\\MarchesPublics\\WebRoot\\images\\Logo.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement style="table" mode="Opaque" x="3" y="322" width="46" height="190" backcolor="#EEF3F6" uuid="d1f05269-8bba-48f1-aee9-b1b11d81bda2"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{typeLot}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="table" mode="Opaque" x="50" y="322" width="173" height="190" backcolor="#EEF3F6" uuid="32a362da-bf8b-4a83-8157-e6c59dd07733"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{objetAppelOffre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="table" mode="Opaque" x="224" y="322" width="59" height="190" backcolor="#EEF3F6" uuid="8b4f2737-83cd-4e33-8f75-02c853f9d471"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateOp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="table" mode="Opaque" x="283" y="322" width="65" height="190" backcolor="#EEF3F6" uuid="57f89e6f-ca72-4ead-8e79-5d483f638a84"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateAchevementTc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="table" mode="Opaque" x="348" y="322" width="110" height="190" backcolor="#EEF3F6" uuid="b8911a6c-90fd-4767-889b-7d27e03d85df"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{concurrentRetenu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="table" mode="Opaque" x="458" y="322" width="85" height="190" backcolor="#EEF3F6" uuid="32c89269-caa7-49ff-a37b-da1082dbbef5"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montantOffreRetenue}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="table_TH" mode="Opaque" x="3" y="255" width="46" height="64" backcolor="#C0EEEE" uuid="827ecad5-1b1a-424a-8633-1a631b9966a4"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indication du lot	]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" mode="Opaque" x="50" y="255" width="173" height="64" backcolor="#C0EEEE" uuid="74135280-7284-41a4-924d-1469db7666ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objet du lot]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" mode="Opaque" x="224" y="255" width="59" height="64" backcolor="#C0EEEE" uuid="a62e389d-9539-4a4d-9cbd-31aefcfb893c"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date et heure d’ouverture des plis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" mode="Opaque" x="283" y="255" width="65" height="64" backcolor="#C0EEEE" uuid="af225b66-1ccd-4782-995d-ce05b2a6ca89"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date d'achèvement des travaux de la commission ou du jury]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" mode="Opaque" x="348" y="255" width="110" height="64" backcolor="#C0EEEE" uuid="35401661-58de-43f8-bfdd-c064ed1f1318"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Concurrent retenu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table_TH" mode="Opaque" x="458" y="255" width="85" height="64" backcolor="#C0EEEE" uuid="efe1989d-cfa0-4728-842b-0c58d17e86ba"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Montant de l'offre retenue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="559" width="294" height="27" uuid="1510073a-a391-448e-a6ec-c400539d9091"/>
+				<textElement>
+					<font fontName="CG Omega" size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Singé : Le président de la Commune Dcheira .El jihadia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="539" width="163" height="20" uuid="d54f8a6a-d37d-4cf1-9102-502d8beebc88"/>
+				<textElement>
+					<font fontName="CG Omega" size="11"/>
+				</textElement>
+				<text><![CDATA[Fait à Dcheira El Jihadia le :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement x="144" y="0" width="261" height="17" uuid="6b02af35-728a-4704-8c74-57a8886c602d"/>
+				<textElement textAlignment="Center">
+					<font fontName="CG Omega" size="9" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numAppelOffre2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
